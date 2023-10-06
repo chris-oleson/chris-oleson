@@ -1,0 +1,9 @@
+<template>
+    <v-container>
+        <v-row>
+            <v-col>
+                Hello!
+            </v-col>
+        </v-row>
+    </v-container>
+</template>
