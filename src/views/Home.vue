@@ -10,12 +10,16 @@
                 </div>
             </v-col>
 
-            <v-col class="text-right d-flex justify-end">
-                <div>
-                    <v-list-item class="my-10 font-weight-light" variant="plain" to="/about">About Me</v-list-item>
-                    <v-list-item class="my-10 font-weight-light" variant="plain" to="/projects">Projects</v-list-item>
-                    <v-list-item class="my-10 font-weight-light" variant="plain" to="/blog">Blog</v-list-item>
-                </div>
+            <v-col class="d-flex justify-center">
+                <v-list class="text-center">
+                    <v-list-item class="font-weight-thin text-h5">
+                        Projects
+                    </v-list-item>
+                    <v-divider></v-divider>
+                    <v-list-item>
+                        <v-btn class="text-none font-weight-light" size="x-large" variant="plain" href="https://vufi.app/" target="_blank">VuFi</v-btn>
+                    </v-list-item>
+                </v-list>
             </v-col>
         </v-row>
     </v-container>
