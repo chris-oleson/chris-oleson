@@ -6,8 +6,4 @@ const app = createApp(App)
 import vuetify from './vuetify'
 app.use(vuetify)
 
-// Vue Router
-import router from './router'
-app.use(router)
-
 app.mount('#app')
