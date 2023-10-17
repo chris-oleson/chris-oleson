@@ -9,18 +9,18 @@
 
         <v-main>
             <v-fade-transition appear>
-                <v-container class="fill-height mt-n8">
+                <v-container class="fill-height mt-n8" fluid>
                     <v-row class="align-center">
-                        <v-col>
-                            <h1 class="text-h1 font-weight-thin d-flex justify-center">Chris Oleson</h1>
-                            <div class="d-flex justify-space-around my-8">
+                        <v-col cols="12" sm="6">
+                            <h1 class="text-h1 font-weight-thin d-flex justify-center text-center">Chris Oleson</h1>
+                            <div class="d-flex justify-space-around ma-8">
                                 <p class="font-weight-light">Developer</p>
                                 <p class="font-weight-light">Designer</p>
                                 <p class="font-weight-light">Entrepreneur</p>
                             </div>
                         </v-col>
 
-                        <v-col class="d-flex justify-center">
+                        <v-col cols="12" sm="6" class="d-flex justify-center">
                             <v-list class="text-center">
                                 <v-list-item class="font-weight-thin text-h5">
                                     Projects
