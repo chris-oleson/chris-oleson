@@ -9,7 +9,7 @@
 
         <v-main>
             <v-fade-transition appear>
-                <v-container class="fill-height mt-n8" fluid>
+                <v-container class="fill-height mt-n8">
                     <v-row class="align-center">
                         <v-col cols="12" sm="6">
                             <h1 class="text-h1 font-weight-thin d-flex justify-center text-center">Chris Oleson</h1>
