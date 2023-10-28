@@ -9,13 +9,15 @@
 
         <v-main>
             <v-fade-transition appear>
-                <v-container class="fill-height mt-n8">
-                    <v-row class="align-center">
+                <v-container class="fill-height">
+                    <v-row>
                         <v-col cols="12" sm="6">
-                            <h1 class="text-h1 font-weight-thin d-flex justify-center text-center">Chris Oleson</h1>
+                            <h1 class="text-h1 font-weight-thin text-center mt-n8">Chris Oleson</h1>
                             <div class="d-flex justify-space-around ma-8">
                                 <p class="font-weight-light">Developer</p>
+                                <p>•</p>
                                 <p class="font-weight-light">Designer</p>
+                                <p>•</p>
                                 <p class="font-weight-light">Entrepreneur</p>
                             </div>
                         </v-col>
