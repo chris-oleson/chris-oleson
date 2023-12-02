@@ -76,8 +76,8 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 [data-theme="dark"] {
     --background: #202d3b;
     --text: #ffffff;
-    --shadow: none;
-    --shadow-title: none;
+    --shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+    --shadow-title: 7px 7px 6px rgba(0, 0, 0, 0.5);
 }
 
 body {
