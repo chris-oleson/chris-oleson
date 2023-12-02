@@ -161,7 +161,7 @@ img:hover{
     hr {
         border: none;
         height: 1px;
-        background: #202d3b;
+        background: var(--text);
     }
 
     a {
