@@ -31,7 +31,7 @@
         <div class="details">
             <Transition mode="out-in">
                 <p v-if="details == 'portfolio'">
-                    <p>I created this website using only the Vue javascript framework, which is probably overkill for such a simple project. However, future features will be easy to add because because of it.</p>
+                    <p>I created this website using only the Vue javascript framework, which is probably overkill for such a simple project</p>
                     <div><a href="https://chrisoleson.dev" target="_blank">Site ▶︎</a></div>
                     <div><a href="https://github.com/chris-oleson/my-website">Code ▶︎</a></div>
                 </p>
