@@ -1,8 +1,14 @@
 <template>
     <div id="header">
         <a href="mailto:crolesonjr@gmail.com">crolesonjr@gmail.com</a>
-        <a href="https://github.com/chris-oleson" target="_blank"><img class="circle" height="32" width="32" src="https://cdn.simpleicons.org/github/202d3b"/></a>
-        <a href="https://www.linkedin.com/in/chris-oleson-8372b2160/" target="_blank"><img height="32" width="32" src="https://cdn.simpleicons.org/linkedin/202d3b"/></a>
+        <a href="https://github.com/chris-oleson" target="_blank">
+            <img v-if="theme == 'light'" class="circle" height="32" width="32" src="https://cdn.simpleicons.org/github/202d3b"/>
+            <img v-if="theme == 'dark'" class="circle" height="32" width="32" src="https://cdn.simpleicons.org/github/ffffff"/>
+        </a>
+        <a href="https://www.linkedin.com/in/chris-oleson-8372b2160/" target="_blank">
+            <img v-if="theme == 'light'" height="32" width="32" src="https://cdn.simpleicons.org/linkedin/202d3b"/>
+            <img v-if="theme == 'dark'" height="32" width="32" src="https://cdn.simpleicons.org/linkedin/ffffff"/>
+        </a>
     </div>
 
     <div class="container">
@@ -41,8 +47,8 @@
 
 <script setup>
 import { ref } from 'vue'
-const details = ref('')
 
+const details = ref('')
 function display(project) {
     if (project == details.value) {
         details.value = ''
@@ -51,13 +57,34 @@ function display(project) {
         details.value = project
     }
 }
+
+let theme = 'light'
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+    document.documentElement.setAttribute('data-theme', 'dark')
+}
 </script>
 
 <style>
+:root {
+  --background: #ffffff;
+  --text: #202d3b;
+  --shadow: 4px 4px 3px rgba(136, 136, 136, 0.5);
+  --shadow-title: 7px 7px 6px rgba(136, 136, 136, 0.5);
+}
+
+[data-theme="dark"] {
+    --background: #202d3b;
+    --text: #ffffff;
+    --shadow: none;
+    --shadow-title: none;
+}
+
 body {
     font-family: Roboto, Geneva, Tahoma, sans-serif;
     font-weight: 300;
-    color: #202d3b;
+    background-color: var(--background);
+    color: var(--text)
 }
 
 a {
@@ -68,14 +95,14 @@ a {
 }
 a:hover {
     transform: scale(1.05);
-    text-shadow: 4px 4px 3px rgba(136, 136, 136, 0.5);
+    text-shadow: var(--shadow)
 }
 
 h1 {
     font-size: 6em;
     margin: 0;
     font-weight: 100;
-    text-shadow: 7px 7px 6px rgba(136, 136, 136, 0.5);
+    text-shadow: var(--shadow-title)
 }
 
 h2 {
@@ -87,7 +114,7 @@ img {
     transition-duration: 200ms;
 }
 img:hover{
-    box-shadow: 4px 4px 3px rgba(136, 136, 136, 0.5);
+    box-shadow: var(--shadow)
 }
 
 .circle {
@@ -142,10 +169,6 @@ img:hover{
         user-select: none;
         cursor: pointer;
         display: block;
-    }
-    a:hover {
-        transform: scale(1.05);
-        text-shadow: 4px 4px 3px rgba(136, 136, 136, 0.5);
     }
 }
 
