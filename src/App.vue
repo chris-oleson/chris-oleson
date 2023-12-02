@@ -1,7 +1,7 @@
 <template>
     <div id="header">
         <a href="mailto:crolesonjr@gmail.com">crolesonjr@gmail.com</a>
-        <a href="https://github.com/chris-oleson" target="_blank"><img height="32" width="32" src="https://cdn.simpleicons.org/github/202d3b"/></a>
+        <a href="https://github.com/chris-oleson" target="_blank"><img class="circle" height="32" width="32" src="https://cdn.simpleicons.org/github/202d3b"/></a>
         <a href="https://www.linkedin.com/in/chris-oleson-8372b2160/" target="_blank"><img height="32" width="32" src="https://cdn.simpleicons.org/linkedin/202d3b"/></a>
     </div>
 
@@ -18,15 +18,22 @@
         <div class="projects">
             <h2>Projects</h2>
             <hr>
+            <a @click="display('portfolio')">Portfolio</a>
             <a @click="display('vufi')">VuFi</a>
         </div>
 
         <div class="details">
             <Transition mode="out-in">
-                <div v-if="details == 'vufi'">
-                    <p>VuFi is a full stack commercial web application that automatically tracks and visualizes financial asset data. The frontend is built with Vue, and the backend is built with Express, Node, and MySQL</p>
-                    <a href="https://vufi.app" target="_blank">View ➤</a>
-                </div>
+                <p v-if="details == 'portfolio'">
+                    <p>I created this website using only the Vue javascript framework, which is probably overkill for such a simple project. However, future features will be easy to add because because of it.</p>
+                    <div><a href="https://chrisoleson.dev" target="_blank">Site ▶︎</a></div>
+                    <div><a href="https://github.com/chris-oleson/my-website">Code ▶︎</a></div>
+                </p>
+                <p v-else-if="details == 'vufi'">
+                    <p>VuFi is a full stack commercial web application that automatically tracks and visualizes financial asset data. The frontend is built with Vue, and the backend uses Express, Node, and MySQL</p>
+                    <div><a href="https://vufi.app" target="_blank">Site ▶︎</a></div>
+                    <div><a href="https://github.com/chris-oleson/vufi-frontend">Code ▶︎</a></div>
+                </p>
             </Transition>
         </div>
     </div>
@@ -57,6 +64,34 @@ a {
     color: inherit;
     text-decoration: inherit;
     transition-duration: 200ms;
+    font-weight: 400;
+}
+a:hover {
+    transform: scale(1.05);
+    text-shadow: 4px 4px 3px rgba(136, 136, 136, 0.5);
+}
+
+h1 {
+    font-size: 6em;
+    margin: 0;
+    font-weight: 100;
+    text-shadow: 7px 7px 6px rgba(136, 136, 136, 0.5);
+}
+
+h2 {
+    font-weight: 300;
+    margin: 0;
+}
+
+img {
+    transition-duration: 200ms;
+}
+img:hover{
+    box-shadow: 4px 4px 3px rgba(136, 136, 136, 0.5);
+}
+
+.circle {
+    border-radius: 100%;
 }
 
 #header {
@@ -66,10 +101,6 @@ a {
 
     a {
         margin: auto 10px auto 10px;
-    }
-    a:hover {
-        filter: brightness(150%);
-        transform: scale(1.05);
     }
 }
 
@@ -85,13 +116,6 @@ a {
 .title {
     margin: 0px 50px 20px 50px;
     text-align: center;
-    
-    h1 {
-        font-size: 96px;
-        margin: 0;
-        font-weight: 100;
-        text-shadow: 7px 7px 6px rgba(136, 136, 136, 0.5);
-    }
 
     .subtitle {
         display: flex;
@@ -107,11 +131,6 @@ a {
 .projects {
     text-align: center;
 
-    h2 {
-        font-weight: 300;
-        margin: 0px;
-    }
-
     hr {
         border: none;
         height: 1px;
@@ -119,10 +138,9 @@ a {
     }
 
     a {
+        padding: 5px;
         user-select: none;
         cursor: pointer;
-        font-size: 20px;
-        font-weight: 400;
         display: block;
     }
     a:hover {
@@ -133,21 +151,21 @@ a {
 
 .details {
     width: 300px;
-    transition-duration: 200ms;
-    a {
-        display:block;
-        font-weight: 400;
+
+    div {
         text-align: right;
+    }
+
+    a {
+        display: inline-block;
     }
 }
 
-.v-enter-active,
-.v-leave-active {
+.v-enter-active, .v-leave-active {
   transition: opacity 0.2s;
 }
 
-.v-enter-from,
-.v-leave-to {
+.v-enter-from, .v-leave-to {
   opacity: 0;
 }
 </style>
