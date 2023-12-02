@@ -125,10 +125,9 @@ img:hover{
     display: flex;
     justify-content: right;
     align-content: center;
-
-    a {
-        margin: auto 10px auto 10px;
-    }
+}
+#header a {
+    margin: auto 10px auto 10px;
 }
 
 .container {
@@ -143,45 +142,37 @@ img:hover{
 .title {
     margin: 0px 50px 20px 50px;
     text-align: center;
-
-    .subtitle {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    p {
-        padding: 0px 10px
-    }
+}
+.subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .projects {
     text-align: center;
-
-    hr {
-        border: none;
-        height: 1px;
-        background: var(--text);
-    }
-
-    a {
-        padding: 5px;
-        user-select: none;
-        cursor: pointer;
-        display: block;
-    }
+}
+.projects hr {
+    border: none;
+    height: 1px;
+    background: var(--text);
+}
+.projects a {
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+    display: block;
 }
 
 .details {
     width: 300px;
 
-    div {
-        text-align: right;
-    }
-
-    a {
-        display: inline-block;
-    }
+}
+.details div {
+    text-align: right;
+}
+.details a {
+    display: inline-block;
 }
 
 .v-enter-active, .v-leave-active {
