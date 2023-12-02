@@ -2,12 +2,10 @@
     <div id="header">
         <a href="mailto:crolesonjr@gmail.com">crolesonjr@gmail.com</a>
         <a href="https://github.com/chris-oleson" target="_blank">
-            <img v-if="theme == 'light'" class="circle" height="32" width="32" src="https://cdn.simpleicons.org/github/202d3b"/>
-            <img v-if="theme == 'dark'" class="circle" height="32" width="32" src="https://cdn.simpleicons.org/github/ffffff"/>
+            <img class="circle" height="32" width="32" src="https://cdn.simpleicons.org/github/202d3b/ffffff"/>
         </a>
         <a href="https://www.linkedin.com/in/chris-oleson-8372b2160/" target="_blank">
-            <img v-if="theme == 'light'" height="32" width="32" src="https://cdn.simpleicons.org/linkedin/202d3b"/>
-            <img v-if="theme == 'dark'" height="32" width="32" src="https://cdn.simpleicons.org/linkedin/ffffff"/>
+            <img height="32" width="32" src="https://cdn.simpleicons.org/linkedin/202d3b/ffffff"/>
         </a>
     </div>
 
@@ -31,7 +29,7 @@
         <div class="details">
             <Transition mode="out-in">
                 <p v-if="details == 'portfolio'">
-                    <p>I created this website using only the Vue javascript framework, which is probably overkill for such a simple project</p>
+                    <p>This website was built with the Vue javascript framework, which is probably overkill for such a simple project</p>
                     <div><a href="https://chrisoleson.dev" target="_blank">Site ▶︎</a></div>
                     <div><a href="https://github.com/chris-oleson/my-website">Code ▶︎</a></div>
                 </p>
@@ -58,9 +56,7 @@ function display(project) {
     }
 }
 
-let theme = 'light'
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    theme = 'dark'
     document.documentElement.setAttribute('data-theme', 'dark')
 }
 </script>
