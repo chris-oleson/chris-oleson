@@ -30,7 +30,6 @@
             <Transition mode="out-in">
                 <p v-if="details == 'portfolio'">
                     <p>This website was built with the Vue javascript framework, which is probably overkill for such a simple project</p>
-                    <div><a href="https://chrisoleson.dev" target="_blank">Site ▶︎</a></div>
                     <div><a href="https://github.com/chris-oleson/my-website">Code ▶︎</a></div>
                 </p>
                 <p v-else-if="details == 'vufi'">
@@ -121,9 +120,10 @@ img:hover{
     display: flex;
     justify-content: right;
     align-content: center;
-}
-#header a {
-    margin: auto 10px auto 10px;
+
+    & a {
+        margin: auto 10px auto 10px;
+    }
 }
 
 .container {
@@ -138,37 +138,39 @@ img:hover{
 .title {
     margin: 0px 50px 20px 50px;
     text-align: center;
-}
-.subtitle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+    .subtitle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 .projects {
     text-align: center;
-}
-.projects hr {
-    border: none;
-    height: 1px;
-    background: var(--text);
-}
-.projects a {
-    padding: 5px;
-    user-select: none;
-    cursor: pointer;
-    display: block;
+    & a {
+        padding: 5px;
+        user-select: none;
+        cursor: pointer;
+        display: block;
+    }
+    & hr {
+        border: none;
+        height: 1px;
+        background: var(--text);
+    }
 }
 
 .details {
     width: 300px;
 
-}
-.details div {
-    text-align: right;
-}
-.details a {
-    display: inline-block;
+    & div {
+        text-align: right;
+    }
+
+    & a {
+        display: inline-block;
+    }
 }
 
 .v-enter-active, .v-leave-active {
