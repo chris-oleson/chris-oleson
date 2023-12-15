@@ -2,15 +2,57 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="icon" href="/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="max-snippet:35">
         <meta name="description" content="Developer • Designer • Entrepreneur">
         <title>Chris Oleson</title>
+        <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+        <link rel="stylesheet" href="style.css"
     </head>
+
     <body>
-        <div id="app"></div>
-        <script type="module" src="/src/main.js"></script>
+        <div id="header">
+            <a href="mailto:crolesonjr@gmail.com">crolesonjr@gmail.com</a>
+            <a href="https://github.com/chris-oleson" target="_blank">
+                <img id="github" class="circle" height="32" width="32" src="https://cdn.simpleicons.org/github/202d3b"/>
+            </a>
+            <a href="https://www.linkedin.com/in/chris-oleson-8372b2160/" target="_blank">
+                <img id="linkedin" height="32" width="32" src="https://cdn.simpleicons.org/linkedin/202d3b"/>
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="title">
+                <h1>Chris Oleson</h1>
+                <div class="subtitle">
+                    <p>Developer</p>
+                    <p>Designer</p>
+                    <p>Entrepreneur</p>
+                </div>
+            </div>
+
+            <div class="projects">
+                <h2>Projects</h2>
+                <hr>
+                <a onclick="display('portfolio')">Portfolio</a>
+                <a onclick="display('vufi')">VuFi</a>
+            </div>
+
+            <div class="details">
+                <div id="portfolio" class="detail">
+                    <p>I created this website using only HTML, CSS, and vanilla Javascript</p>
+                    <div><a href="https://chrisoleson.dev" target="_blank">Site ▶︎</a></div>
+                    <div><a href="https://github.com/chris-oleson/my-website">Code ▶︎</a></div>
+                </div>
+
+                <div id="vufi" class="detail">
+                    <p>VuFi is a full stack commercial web application that automatically tracks and visualizes financial asset data. The frontend is built with Vue, and the backend uses Express, Node, and MySQL</p>
+                    <div><a href="https://vufi.app" target="_blank">Site ▶︎</a></div>
+                    <div><a href="https://github.com/chris-oleson/vufi-frontend">Code ▶︎</a></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
