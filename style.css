@@ -115,11 +115,13 @@ img:hover{
 
 .detail {
     position: absolute;
+    visibility: hidden;
     width: inherit;
     opacity: 0;
     transition-duration:  500ms;
 }
 
 .show {
+    visibility: visible;
     opacity: 1;
 }
