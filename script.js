@@ -1,22 +1,11 @@
 let details = document.getElementsByClassName('detail')
-let showing = false
 function display(project) {
     for (let detail of details) {
-        if (detail.id == project && !detail.classList.contains('show')) {
-            if (showing) {
-                setTimeout(() => {detail.classList.add('show')}, 300)
-            }
-            else {
-                detail.classList.add('show')
-            }
-            showing = true
-        }
-        else if (detail.id == project && detail.classList.contains('show')) {
+        if (detail.classList.contains('show')) {
             detail.classList.remove('show')
-            showing = false
         }
-        else {
-            detail.classList.remove('show')
+        else if (detail.id == project) {
+            detail.classList.add('show')
         }
     }
 }

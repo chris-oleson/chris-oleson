@@ -118,7 +118,7 @@ img:hover{
     visibility: hidden;
     width: inherit;
     opacity: 0;
-    transition-duration: 300ms;
+    transition-duration: 500ms;
 }
 
 .show {
