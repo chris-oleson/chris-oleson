@@ -109,14 +109,6 @@ hr {
 .details {
     width: 300px;
     height: 100px;
-
-    & div {
-        text-align: right;
-    }
-
-    & a {
-        display: inline-block;
-    }
 }
 
 .detail {
@@ -125,6 +117,14 @@ hr {
     width: inherit;
     opacity: 0;
     transition-duration: 500ms;
+
+    & div {
+        text-align: right;
+    }
+
+    & p {
+        margin: 0 0 16px 0;
+    }
 }
 
 .show {
