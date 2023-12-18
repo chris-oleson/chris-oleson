@@ -28,7 +28,24 @@ a {
 }
 a:hover {
     transform: scale(1.05);
-    text-shadow: var(--shadow)
+    text-shadow: var(--shadow);
+}
+
+button {
+    font-size: 16px;
+    margin: 0 auto 0 auto;
+    padding: 5px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    display: block;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    background-color: inherit;
+}
+button:hover {
+    transform: scale(1.05);
+    text-shadow: var(--shadow);
 }
 
 h1 {
@@ -48,6 +65,12 @@ img {
 }
 img:hover{
     box-shadow: var(--shadow)
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: var(--text);
 }
 
 .circle {
@@ -81,23 +104,6 @@ img:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.projects {
-    text-align: center;
-
-    & hr {
-        border: none;
-        height: 1px;
-        background: var(--text);
-    }
-
-    & a {
-        padding: 5px;
-        user-select: none;
-        cursor: pointer;
-        display: block;
-    }
 }
 
 .details {
