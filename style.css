@@ -82,6 +82,10 @@ hr {
     justify-content: right;
     align-content: center;
     margin-bottom: 200px;
+
+    @media (max-width: 400px) {
+        margin-bottom: 100px;
+    }
     & a {
         margin: auto 10px auto 10px;
     }
@@ -112,7 +116,7 @@ hr {
 }
 
 .details {
-    margin-top: 40px;
+    margin: 40px 40px 0px 40px;
     width: 300px;
 }
 
