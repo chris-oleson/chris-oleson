@@ -21,6 +21,7 @@ body {
 }
 
 a {
+    display: inline-block;
     color: inherit;
     text-decoration: inherit;
     transition-duration: 200ms;
@@ -61,6 +62,7 @@ h2 {
 }
 
 img {
+    display: block;
     transition-duration: 200ms;
 }
 img:hover{
@@ -83,7 +85,7 @@ hr {
     align-content: center;
     margin-bottom: 200px;
 
-    @media (max-width: 400px) {
+    @media (max-width: 400px) or (max-height: 400px) {
         margin-bottom: 100px;
     }
     & a {
