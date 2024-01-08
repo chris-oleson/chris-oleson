@@ -90,6 +90,7 @@ hr {
     }
     & a {
         margin: auto 10px auto 10px;
+        font-weight: 300;
     }
 }
 
