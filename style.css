@@ -91,7 +91,7 @@ hr {
 
 .container {
     display: flex;
-    height: 90vh;
+    height: 85vh;
     justify-content: space-evenly;
     align-content: space-evenly;
     flex-wrap: wrap;
@@ -103,12 +103,12 @@ hr {
 
 #subtitle {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .details {
     width: 550px;
+    margin: 20px;
     height: min-content;
     display: grid;
     align-items: center;
