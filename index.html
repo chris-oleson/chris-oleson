@@ -23,23 +23,16 @@
         </div>
 
         <div class="container">
-            <div class="title">
-                <h1>Chris Oleson</h1>
-                <div class="subtitle">
-                    <p>Developer</p>
-                    <p>Designer</p>
-                    <p>Entrepreneur</p>
-                </div>
-            </div>
-
-            <div class="projects">
-                <h2>Projects</h2>
-                <hr>
-                <button onclick="display('portfolio')">Portfolio</button>
-                <button onclick="display('vufi')">VuFi</button>
-            </div>
-
             <div class="details">
+                <div id="title" class="detail show">
+                    <h1>Chris Oleson</h1>
+                    <div id="subtitle">
+                        <p>Developer</p>
+                        <p>Designer</p>
+                        <p>Entrepreneur</p>
+                    </div>
+                </div>
+
                 <div id="portfolio" class="detail">
                     <p>I created this website using only HTML, CSS, and vanilla Javascript</p>
                     <div><a href="https://github.com/chris-oleson/portfolio" target="_blank">Code ▶︎</a></div>
@@ -49,6 +42,15 @@
                     <p>VuFi is a full stack commercial web application that automatically tracks and visualizes financial asset data. The frontend is built with Vue, and the backend uses Express, Node, and MySQL</p>
                     <div><a href="https://vufi.app" target="_blank">Site ▶︎</a></div>
                     <div><a href="https://github.com/chris-oleson/vufi-frontend" target="_blank">Code ▶︎</a></div>
+                </div>
+            </div>
+
+            <div class="projects">
+                <div>
+                    <h2>Projects</h2>
+                    <hr>
+                    <button onclick="display('portfolio')">Portfolio</button>
+                    <button onclick="display('vufi')">VuFi</button>
                 </div>
             </div>
         </div>

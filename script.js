@@ -1,12 +1,18 @@
 let details = document.getElementsByClassName('detail')
 function display(project) {
+    let found = false
     for (let detail of details) {
         if (detail.classList.contains('show')) {
             detail.classList.remove('show')
         }
         else if (detail.id == project) {
             detail.classList.add('show')
+            found = true
         }
+    }
+
+    if (found == false) {
+        document.getElementById('title').classList.add('show')
     }
 }
 
