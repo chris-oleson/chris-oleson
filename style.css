@@ -116,8 +116,11 @@ hr {
 
 .projects {
     margin: 0px 50px;
-    display: flex;
-    align-items: center;
+
+    & button {
+        margin: 0px;
+        padding: 5px 0px;
+    }
 }
 
 .detail {

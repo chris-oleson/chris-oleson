@@ -35,6 +35,7 @@
 
                 <div id="portfolio" class="detail">
                     <p>I created this website using only HTML, CSS, and vanilla Javascript</p>
+                    <div><a href="https://chrisoleson.dev" target="_blank">Site ▶︎</a></div>
                     <div><a href="https://github.com/chris-oleson/portfolio" target="_blank">Code ▶︎</a></div>
                 </div>
 
@@ -43,17 +44,28 @@
                     <div><a href="https://vufi.app" target="_blank">Site ▶︎</a></div>
                     <div><a href="https://github.com/chris-oleson/vufi-frontend" target="_blank">Code ▶︎</a></div>
                 </div>
+
+                <div id="tinyticket" class="detail">
+                    <p>TinyTicket is my current endeavor to make a simple IT ticketing system that actually has a good user interface. I've used several ticketing systems before working in helpdesk positions, but I've never been happy with them.</p>
+                    <div><a href="https://github.com/chris-oleson/tinyticket-frontend" target="_blank">Code ▶︎</a></div>
+                </div>
+
+                <div id="logcenter" class="detail">
+                    <p>LogCenter is a application for centralized logging using http requests. It's meant for tracking specific errors and events in order to give better transparency on the internals of an application for non-technical people.</p>
+                    <div><a href="https://github.com/chris-oleson/logcenter-frontend" target="_blank">Code ▶︎</a></div>
+                </div>
             </div>
 
             <div class="projects">
-                <div>
-                    <h2>Projects</h2>
-                    <hr>
-                    <button onclick="display('portfolio')">Portfolio</button>
-                    <button onclick="display('vufi')">VuFi</button>
-                </div>
+                <h2>Projects</h2>
+                <hr>
+                <button onclick="display('portfolio')">Portfolio</button>
+                <button onclick="display('vufi')">VuFi</button>
+                <button onclick="display('tinyticket')">TinyTicket</button>
+                <button onclick="display('logcenter')">LogCenter</button>
             </div>
         </div>
+
         <script src="script.js"></script>
     </body>
 </html>
