@@ -102,11 +102,7 @@ hr {
     flex-wrap: wrap;
 }
 
-#title {
-    text-align: center;
-}
-
-#subtitle {
+.subtitle {
     display: flex;
     justify-content: space-around;
 }
