@@ -8,7 +8,7 @@
         <title>Chris Oleson</title>
         <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
-        <link rel="stylesheet" href="style.css"
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -24,7 +24,7 @@
 
         <div class="container">
             <div class="details">
-                <div id="title" class="detail show">
+                <div class="title detail show">
                     <h1>Chris Oleson</h1>
                     <div id="subtitle">
                         <p>Developer</p>
@@ -33,29 +33,29 @@
                     </div>
                 </div>
 
-                <div id="portfolio" class="detail">
+                <div class="portfolio detail">
                     <p>I created this website using only HTML, CSS, and Javascript. It's minimalist, but has great responsive design and a dark mode!</p>
                     <div><a href="https://chrisoleson.dev" target="_blank">Site ▶︎</a></div>
                     <div><a href="https://github.com/chris-oleson/portfolio" target="_blank">Code ▶︎</a></div>
                 </div>
 
-                <div id="vufi" class="detail">
+                <div class="vufi detail">
                     <p>VuFi is a full stack commercial web application that automatically tracks and visualizes financial asset data. The frontend is built with Vue, and the backend uses Express, Node, and MySQL. However, the github repository is private for security reasons.</p>
                     <div><a href="https://vufi.app" target="_blank">Site ▶︎</a></div>
                 </div>
 
-                <div id="cinematrix" class="detail">
+                <div class="cinematrix detail">
                     <p>Cinematrix is an open source movie collecting application that showcases beautiful UI and a secure backend.</p>
                     <div><a href="https://github.com/chris-oleson/cinematrix" target="_blank">Code ▶︎</a></div>
                     <div><a href="https://cinematrix.site" target="_blank">Site ▶︎</a></div>
                 </div>
 
-                <div id="tinyticket" class="detail">
+                <div class="tinyticket detail">
                     <p>TinyTicket is my current endeavor to make a simple IT ticketing system that actually has a good user interface. I've used several badly designed ticketing systems while working in helpdesk positions, so I'm building one that I enjoy using.</p>
                     <div><a href="https://github.com/chris-oleson/tinyticket" target="_blank">Code ▶︎</a></div>
                 </div>
 
-                <div id="centrify" class="detail">
+                <div class="centrify detail">
                     <p>Centrify is a application for centralized logging using http requests. It's meant for tracking specific errors and events in order to give better transparency on the internals of multiple applications for non-technical people.</p>
                     <div><a href="https://github.com/chris-oleson/centrify" target="_blank">Code ▶︎</a></div>
                 </div>
@@ -64,11 +64,11 @@
             <div class="projects">
                 <h2>Projects</h2>
                 <hr>
-                <button onclick="display('portfolio')">Portfolio</button>
-                <button onclick="display('vufi')">VuFi</button>
-                <button onclick="display('cinematrix')">Cinematrix</button>
-                <button onclick="display('tinyticket')">TinyTicket</button>
-                <button onclick="display('logcenter')">Centrify</button>
+                <button class="button portfolio" onclick="display('portfolio')">Portfolio</button>
+                <button class="button vufi" onclick="display('vufi')">VuFi</button>
+                <button class="button cinematrix" onclick="display('cinematrix')">Cinematrix</button>
+                <button class="button tinyticket" onclick="display('tinyticket')">TinyTicket</button>
+                <button class="button centrify" onclick="display('centrify')">Centrify</button>
             </div>
         </div>
 
