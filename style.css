@@ -27,7 +27,7 @@ a {
     font-weight: 400;
 }
 a:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
     text-shadow: var(--shadow);
 }
 
@@ -44,7 +44,11 @@ button {
     background-color: inherit;
 }
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
+    text-shadow: var(--shadow);
+}
+.clicked {
+    transform: scale(1.07);
     text-shadow: var(--shadow);
 }
 
@@ -52,7 +56,8 @@ h1 {
     font-size: 6em;
     margin: 0;
     font-weight: 100;
-    text-shadow: var(--shadow-title)
+    text-shadow: var(--shadow-title);
+    text-align: center;
 }
 
 h2 {
@@ -142,9 +147,4 @@ hr {
 .show {
     visibility: visible;
     opacity: 1;
-}
-
-.clicked {
-    transform: scale(1.05);
-    text-shadow: var(--shadow);
 }
