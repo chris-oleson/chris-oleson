@@ -43,9 +43,11 @@ button {
     color: inherit;
     background-color: inherit;
 }
-button:hover {
-    transform: scale(1.07);
-    text-shadow: var(--shadow);
+@media (hover) {
+    button:hover {
+        transform: scale(1.07);
+        text-shadow: var(--shadow);
+    }
 }
 .clicked {
     transform: scale(1.07);
