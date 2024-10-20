@@ -5,6 +5,22 @@
   --shadow-title: 7px 7px 6px rgba(136, 136, 136, 0.5);
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Thin.ttf);
+    font-weight: 100;
+}
+
 [data-theme="dark"] {
     --background: #202d3b;
     --text: #ffffff;
@@ -104,7 +120,7 @@ hr {
     display: flex;
     justify-content: right;
     align-content: center;
-    
+
     & a {
         margin: auto 10px auto 10px;
         font-weight: 300;
@@ -118,7 +134,7 @@ hr {
 
 .projects {
     margin: 50px;
-    
+
     & button {
         margin: 0px;
         padding: 5px 0px;
