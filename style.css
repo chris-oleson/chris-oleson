@@ -1,5 +1,5 @@
 :root {
-    --background: #0f0f0f;
+    --background: #181818;
     --text: #e6e6e6;
 }
 
@@ -17,7 +17,7 @@ body {
     animation: textShadow 1.6s infinite;
 
     &:before {
-        content: " ";
+        content: '';
         display: block;
         position: fixed;
         top: 0;
@@ -143,6 +143,7 @@ img {
     height: min-content;
     display: grid;
     align-items: center;
+    position: relative;
 }
 
 .detail {
