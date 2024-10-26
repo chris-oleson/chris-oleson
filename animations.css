@@ -129,3 +129,21 @@
         text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
     }
 }
+
+@keyframes turn-on {
+    0% {
+        border-width: 50vh;
+        border-left-width: 50vw;
+        border-right-width: 50vw;
+    }
+    50% {
+        border-width: 50vh;
+        border-left-width: 20vw;
+        border-right-width: 20vw;
+    }
+    100% {
+        border-width: 0vh;
+        border-left-width: 0vw;
+        border-right-width: 0vw;
+    }
+}
