@@ -1,51 +1,54 @@
 :root {
-  --background: #ffffff;
-  --text: #202d3b;
-  --shadow: 4px 4px 3px rgba(136, 136, 136, 0.5);
-  --shadow-title: 7px 7px 6px rgba(136, 136, 136, 0.5);
+    --background: #0f0f0f;
+    --text: #e6e6e6;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url(./fonts/Roboto-Regular.ttf);
-    font-weight: 400;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url(./fonts/Roboto-Light.ttf);
-    font-weight: 300;
-}
-@font-face {
-    font-family: "Roboto";
-    src: url(./fonts/Roboto-Thin.ttf);
-    font-weight: 100;
-}
-
-[data-theme="dark"] {
-    --background: #202d3b;
-    --text: #ffffff;
-    --shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
-    --shadow-title: 7px 7px 6px rgba(0, 0, 0, 0.5);
+*::selection {
+    color: var(--background);
+    background-color: var(--text);
 }
 
 body {
-    font-family: Roboto, Geneva, Tahoma, sans-serif;
+    font-family: Monospace, Tahoma, sans-serif;
     font-weight: 300;
     background-color: var(--background);
     color: var(--text);
     margin: 0px;
+    animation: textShadow 1.6s infinite;
+
+    &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        z-index: 2;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+    }
+    &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(18, 16, 16, 0.1);
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+        animation: flicker 0.15s infinite;
+    }
 }
 
 a {
-    display: inline-block;
     color: inherit;
     text-decoration: inherit;
-    transition-duration: 200ms;
-    font-weight: 400;
-}
-a:hover {
-    transform: scale(1.07);
-    text-shadow: var(--shadow);
+    text-decoration: underline;
 }
 
 button {
@@ -53,29 +56,18 @@ button {
     margin: 0 auto 0 auto;
     padding: 5px;
     cursor: pointer;
-    transition-duration: 200ms;
     display: block;
     border: none;
     font-family: inherit;
     color: inherit;
     background-color: inherit;
-}
-@media (hover) {
-    button:hover {
-        transform: scale(1.07);
-        text-shadow: var(--shadow);
-    }
-}
-.clicked {
-    transform: scale(1.07);
-    text-shadow: var(--shadow);
+    text-shadow: inherit;
 }
 
 h1 {
-    font-size: 6em;
-    margin: 0;
+    font-size: 86px;
+    margin: 0px;
     font-weight: 100;
-    text-shadow: var(--shadow-title);
     text-align: center;
 }
 
@@ -84,22 +76,10 @@ h2 {
     margin: 0;
 }
 
-img {
-    display: block;
-    transition-duration: 200ms;
-}
-img:hover{
-    box-shadow: var(--shadow)
-}
-
 hr {
     border: none;
     height: 1px;
     background: var(--text);
-}
-
-.circle {
-    border-radius: 100%;
 }
 
 .container {
@@ -110,21 +90,23 @@ hr {
     flex-wrap: wrap;
 }
 
+img {
+    display: block;
+}
+
 .header {
+    z-index: 1;
     width: 100%;
     position: fixed;
-    background-color: var(--background);
+    background-image: linear-gradient(var(--background) 70%, transparent);
 }
 .header-content {
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
     justify-content: right;
     align-content: center;
-
-    & a {
-        margin: auto 10px auto 10px;
-        font-weight: 300;
-    }
 }
 
 .subtitle {
@@ -133,17 +115,31 @@ hr {
 }
 
 .projects {
-    margin: 50px;
+    margin: 25px 50px;
+
+    & div {
+        margin: -10px 0px 4px 0px;
+    }
 
     & button {
         margin: 0px;
-        padding: 5px 0px;
+        padding-left: 0px;
+    }
+    @media (hover) {
+        button:hover:before {
+            content: '>';
+            padding-right: 4px;
+        }
+    }
+    & .clicked:before {
+        content: '>';
+        padding-right: 4px;
     }
 }
 
 .details {
-    width: 550px;
-    margin: 50px;
+    width: 700px;
+    margin: 25px 50px;
     height: min-content;
     display: grid;
     align-items: center;
@@ -154,14 +150,10 @@ hr {
     grid-row: 1;
     visibility: hidden;
     opacity: 0;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
 
     & div {
-        text-align: right;
-    }
-
-    & p {
-        margin: 0 0 16px 0;
+        margin: 16px 0px;
     }
 }
 
