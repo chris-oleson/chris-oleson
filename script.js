@@ -16,9 +16,3 @@ function display(project) {
         displayed = project
     }
 }
-
-const blackScreen = document.querySelector('.black-screen');
-
-blackScreen.addEventListener('animationend', () => {
-    blackScreen.style.display = 'none';
-});
