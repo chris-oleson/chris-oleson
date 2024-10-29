@@ -118,7 +118,7 @@ hr {
 }
 
 .header-content {
-    padding: 40px;
+    padding: 30px 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -134,10 +134,6 @@ hr {
 .projects {
     margin: 25px 50px;
 
-    & div {
-        margin: -10px 0px 4px 0px;
-    }
-
     & button {
         margin: 0px;
         padding-left: 0px;
@@ -151,18 +147,18 @@ hr {
     }
     @media (hover) {
         button:hover {
-            transform: translateX(16px);
+            transform: translateX(12px);
         }
         button:hover:before {
-            transform: translateX(-16px);
+            transform: translateX(-12px);
             opacity: 1;
         }
     }
     & .clicked:not(:hover) {
-        transform: translateX(16px);
+        transform: translateX(12px);
     }
     & .clicked:not(:hover):before {
-        transform: translateX(-16px);
+        transform: translateX(-12px);
         opacity: 1;
     }
 }
