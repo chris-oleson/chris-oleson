@@ -63,7 +63,8 @@ body {
 }
 
 .fade-in {
-    animation: fade-in ease-in 5s forwards;
+    opacity: 0;
+    animation: fade-in 4s ease-in 1s forwards;
 }
 
 a {
@@ -140,16 +141,29 @@ hr {
     & button {
         margin: 0px;
         padding-left: 0px;
+        transition-duration: .2s;
+    }
+    & button:before {
+        content: '>';
+        opacity: 0;
+        transition-duration: .2s;
+        position: absolute;
     }
     @media (hover) {
+        button:hover {
+            transform: translateX(16px);
+        }
         button:hover:before {
-            content: '>';
-            padding-right: 4px;
+            transform: translateX(-16px);
+            opacity: 1;
         }
     }
-    & .clicked:before {
-        content: '>';
-        padding-right: 4px;
+    & .clicked:not(:hover) {
+        transform: translateX(16px);
+    }
+    & .clicked:not(:hover):before {
+        transform: translateX(-16px);
+        opacity: 1;
     }
 }
 
