@@ -145,19 +145,20 @@ hr {
         transition-duration: .2s;
         position: absolute;
     }
-    @media (hover) {
-        button:hover {
-            transform: translateX(12px);
-        }
-        button:hover:before {
-            transform: translateX(-12px);
-            opacity: 1;
-        }
-    }
     & .clicked:not(:hover) {
         transform: translateX(12px);
     }
     & .clicked:not(:hover):before {
+        transform: translateX(-12px);
+        opacity: 1;
+    }
+}
+
+@media (hover) {
+    button:hover {
+        transform: translateX(12px);
+    }
+    button:hover:before {
         transform: translateX(-12px);
         opacity: 1;
     }
