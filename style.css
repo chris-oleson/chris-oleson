@@ -145,10 +145,10 @@ hr {
         transition-duration: .2s;
         position: absolute;
     }
-    & .clicked:not(:hover) {
+    & .clicked {
         transform: translateX(12px);
     }
-    & .clicked:not(:hover):before {
+    & .clicked:before {
         transform: translateX(-12px);
         opacity: 1;
     }
