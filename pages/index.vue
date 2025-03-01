@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="content">
     <div class="section">
         <h1 class="title">Hi, I'm Chris.</h1>
         <h2 class="subtitle">
@@ -7,7 +7,10 @@
             If you're building something on the internet, let's talk!
         </h2>
     </div>
-    <div class="secondary section">
+
+    <div class="horizontal divider"/>
+
+    <div class="section">
         <h2 class="title">Projects</h2>
         <div class="row">
             <a href="https://vufi.app" target="_blank" rel="noopener noreferrer" class="project card">
@@ -40,6 +43,8 @@
             </a>
         </div>
     </div>
+
+    <div class="horizontal divider"/>
 
     <div class="section">
         <h2 class="title">Technologies</h2>
@@ -117,6 +122,12 @@ useHead ({ title: 'Chris Oleson' })
 </script>
 
 <style scoped>
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 .card {
     flex: 1;
     min-width: 17em;
@@ -129,7 +140,7 @@ useHead ({ title: 'Chris Oleson' })
     & .subtitle {
         text-align: center;
     }
-    &.project:hover, &.project:focus {
+    &:hover, &:focus {
         background-color: var(--low-accent);
     }
     &.tech {

@@ -29,8 +29,8 @@
     --text: #ffffff;
     --text-disabled: rgba(255, 255, 255, 0.5);
     --text-accent: rgba(255, 255, 255, 0.6);
-    --accent: rgba(255, 255, 255, 0.3);
-    --low-accent: rgba(255, 255, 255, 0.2);
+    --accent: rgba(255, 255, 255, 0.2);
+    --low-accent: rgba(255, 255, 255, 0.1);
     --background: #000000;
     --error: #7c2323;
 }
@@ -399,11 +399,11 @@ div {
 /* Dividers */
 .divider {
     &.vertical {
-        border-right: 1px solid var(--low-accent);
+        border-right: 1px solid var(--accent);
         height: 100%;
     }
     &.horizontal {
-        border-bottom: 1px solid var(--low-accent);
+        border-bottom: 1px solid var(--accent);
         width: 100%;
     }
 }
@@ -427,7 +427,7 @@ div {
     color: var(--text);
     padding: 1.5rem;
     border-radius: .5em;
-    border: 1px solid var(--low-accent);
+    border: 1px solid var(--accent);
     overflow: hidden;
     text-decoration: none;
     & .title {
@@ -448,7 +448,6 @@ div {
     gap: 2rem;
     & > * {
         max-width: 800px;
-        padding: 0 1rem;
     }
     & p {
         margin-top: .5em;
