@@ -3,7 +3,7 @@
     <div class="section">
         <h1 class="title">Hi, I'm Chris.</h1>
         <h2 class="subtitle">
-            I'm an engineer, designer, and entrepreneur. Technology fascinates me; the perfect blend of creativity and problem-solving.
+            I'm an engineer, designer, and entrepreneur. Technology fascinates me; it's the perfect blend of creativity and problem-solving.
             If you're building something on the internet, let's talk!
         </h2>
     </div>
@@ -126,7 +126,6 @@ useHead ({ title: 'Chris Oleson' })
     flex-direction: column;
     justify-content: center;
     transition-duration: .2s;
-    text-align: justify;
     & .subtitle {
         text-align: center;
     }
