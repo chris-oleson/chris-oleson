@@ -1,7 +1,7 @@
 <template>
 <header class="header">
     <div>
-        <img src="/images/profile-pic.jpg" height="42" width="42" alt="Profile Picture">
+        <nuxt-img src="/images/profile-pic.jpg" height="42" width="42" alt="Profile Picture"/>
         <h2 class="subtitle">Chris Oleson</h2>
 
         <div class="horizontal spacer"/>
