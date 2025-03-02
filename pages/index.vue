@@ -29,7 +29,7 @@
                 </div>
             </a>
             <a href="https://chrisoleson.dev" target="_blank" rel="noopener noreferrer" class="project card">
-                <h2 class="subtitle">chrisoleson.dev</h2>
+                <h2 class="subtitle">Chris Oleson</h2>
                 <div class="text">
                     This is the site you are currently using, which acts as a business card, portfolio, and resume.
                 </div>

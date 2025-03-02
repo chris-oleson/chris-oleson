@@ -324,33 +324,6 @@ div {
     }
 }
 
-/* Groups */
-.group {
-    display: flex;
-    &.horizontal {
-        flex-direction: row;
-        & :first-child {
-            border-radius: .5rem 0 0 .5rem;
-        }
-        & :last-child {
-            border-radius: 0 .5rem .5rem 0;
-        }
-    }
-    &.vertical {
-        flex-direction: column;
-        & :first-child {
-            border-radius: .5rem .5rem 0 0;
-        }
-        & :last-child {
-            border-radius: 0 0 .5rem .5rem;
-        }
-    }
-    & .button {
-        flex: 1;
-        border-radius: 0;
-    }
-}
-
 /* Dashboards */
 .dashboard {
     background-color: var(--low-accent);
@@ -408,19 +381,6 @@ div {
     }
 }
 
-/* Lists */
-.list {
-    background-color: var(--background);
-    border: 1px solid var(--accent);
-    display: flex;
-    &.vertical {
-        flex-direction: column;
-    }
-    &.horizontal {
-        flex-direction: row;
-    }
-}
-
 /* Cards */
 .card {
     height: fit-content;
@@ -474,72 +434,3 @@ div {
         padding-bottom: var(--header-height);
     }
 }
-
-/* Forms */
-.form {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    &.skinny {
-        max-width: 330px;
-    }
-}
-
-/* Dialog */
-.dialog {
-    border: none;
-    background-color: transparent;
-    &::backdrop {
-        background-color: rgba(0, 0, 0, .5);
-        backdrop-filter: blur(.25rem)
-    }
-    & > * {
-        width: 300px;
-    }
-}
-
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    & thead {
-        border-bottom: 1px solid var(--low-accent);
-        & th {
-            padding: 1em .5em;
-            text-wrap: nowrap;
-            font-weight: 400;
-        }
-    }
-    & tbody {
-        & tr {
-            border-bottom: 1px solid var(--low-accent);
-            &:hover {
-                background-color: var(--low-accent);
-                border-color: transparent;
-            }
-            & td {
-                padding: 1em .5em;
-                text-wrap: nowrap;
-            }
-        }
-    }
-}
-
-/* Loading spinners */
-.loading.spinner {
-    width: 50px;
-    padding: 8px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background-color: var(--accent);
-    --_m: conic-gradient(transparent 10%, black), linear-gradient(black 0 0) content-box;
-    -webkit-mask: var(--_m);
-    mask: var(--_m);
-    -webkit-mask-composite: source-out;
-    mask-composite: subtract;
-    animation: l3 1s infinite linear;
-    margin: 0 auto;
-}
-@keyframes l3 {to{transform: rotate(1turn)}}
