@@ -6,7 +6,13 @@ export default defineNuxtConfig({
         head: {
             link: [
                 { rel: 'icon', type: 'image/png', href: '/favicon.png' }
-            ]
+            ],
+            meta: [
+                { name: 'description', content: 'Web developer - UI designer - Entrepreneur' }
+            ],
+            htmlAttrs: {
+                lang: 'en'
+            }
         }
     },
     css: ['/assets/style.css'],
