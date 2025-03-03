@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-useHead ({ title: 'Error - bluprint' })
+useHead ({ title: 'Chris Oleson' })
 defineProps({
     error: {
         type: Object,
