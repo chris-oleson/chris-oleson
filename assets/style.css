@@ -19,8 +19,6 @@
     --success: #83af50;
     --warning: #ffc107;
     --error: #ff3e3e;
-    --header-height: 4rem;
-    --sidebar-width: 15rem;
 }
 
 /* Dark mode theme */
@@ -320,7 +318,7 @@ div {
 .big.icon:not(.text) {
     padding: 0;
     & .iconify {
-        --icon-size: 2.5rem;
+        --icon-size: 2rem;
     }
 }
 
