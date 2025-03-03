@@ -1,5 +1,5 @@
 {
-    "name": "bluprint",
+    "name": "chris-oleson",
     "type": "module",
     "scripts": {
         "build": "nuxt build",
