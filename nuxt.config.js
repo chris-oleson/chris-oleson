@@ -19,6 +19,15 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/color-mode',
         '@nuxt/icon',
-        '@nuxt/image'
-    ]
+        '@nuxt/image',
+        '@nuxt/content'
+    ],
+    devtools: {
+        enabled: false
+    },
+    content: {
+        renderer: {
+            anchorLinks: false
+        }
+    }
 })
