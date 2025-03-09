@@ -18,9 +18,5 @@ const { data } = await useAsyncData('/blog', () => {
 <style scoped>
 .card {
     width: 100%;
-    transition-duration: .2s;
-    &:hover, &:focus {
-        background-color: var(--low-accent);
-    }
 }
 </style>

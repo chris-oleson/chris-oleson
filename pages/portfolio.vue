@@ -140,11 +140,7 @@ useHead ({ title: 'Portfolio - Chris Oleson' })
     justify-content: center;
     min-width: 17em;
     min-height: 13rem;
-    transition-duration: .2s;
     max-width: 396px;
-    &:hover, &:focus {
-        background-color: var(--low-accent);
-    }
     &.tech {
         min-width: fit-content;
         min-height: 0;
@@ -158,5 +154,6 @@ p {
 h2 {
     font-size: 3rem;
     font-weight: 100;
+    text-align: center;
 }
 </style>

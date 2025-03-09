@@ -433,6 +433,10 @@ code, .code {
     border: 1px solid var(--accent);
     overflow: hidden;
     text-decoration: none;
+    transition-duration: .2s;
+    &:hover, &:focus {
+        background-color: var(--low-accent);
+    }
     & h3 {
         text-align: center;
     }
