@@ -2,12 +2,12 @@
 <div class="full height section">
     <div class="picture">
         <h1>Hi, I'm Chris.</h1>
-        <nuxt-img src="/images/profile-pic.jpg" height="200" width="200"/>
+        <nuxt-img src="/images/profile-pic.jpg" height="200" width="200" alt="Chris Oleson"/>
     </div>
-    <h3>
+    <h2>
         I'm a web developer, UI designer, and entrepreneur. Technology fascinates me; it's the perfect blend of creativity and problem-solving.
         If you're building something on the internet, let's talk!
-    </h3>
+    </h2>
     <div class="contact">
         <a class="very big simple icon button" title="Denver, Colorado" href="https://www.google.com/maps/place/Denver,+CO" target="_blank" rel="noopener noreferrer">
             <Icon name="mdi:location"/>
@@ -42,6 +42,11 @@ useHead ({ title: 'Chris Oleson' })
     & img {
         border-radius: 50%;
     }
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: justify;
 }
 
 .contact {
