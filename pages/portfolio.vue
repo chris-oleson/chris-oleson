@@ -1,27 +1,7 @@
 <template>
 <div>
     <div class="section">
-        <h2>Professional Projects</h2>
-        <div class="row">
-            <a href="https://candaceowens.com" target="_blank" rel="noopener noreferrer" class="project card">
-                <h3>Candace Owens</h3>
-                <p>Built in Wordpress and Python, I worked on this site with a few other developers to implement features and bugfixes.</p>
-            </a>
-            <a href="https://inspireinsight.com" target="_blank" rel="noopener noreferrer" class="project card">
-                <h3>Inspire Insight</h3>
-                <p>The frontend of this site needed major refactoring, so another developer and I worked to rebuild it in React.</p>
-            </a>
-            <a href="https://entole.family" target="_blank" rel="noopener noreferrer" class="project card">
-                <h3>Entole</h3>
-                <p>I worked with another developer to rebuild the frontend of this Drupal site in Vue.</p>
-            </a>
-        </div>
-    </div>
-
-    <div class="horizontal divider"/>
-
-    <div class="section">
-        <h2>Personal Projects</h2>
+        <h2>Projects</h2>
         <div class="row">
             <a href="https://vufi.app" target="_blank" rel="noopener noreferrer" class="project card">
                 <h3>VuFi</h3>
