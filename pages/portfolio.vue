@@ -35,8 +35,6 @@
         </div>
     </div>
 
-    <div class="horizontal divider"/>
-
     <div class="section">
         <h2>Technologies</h2>
         <div class="row">

@@ -453,7 +453,7 @@ code, .code {
 .section {
     color: var(--text);
     background-color: var(--background);
-    padding: 5em 0;
+    padding: 5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;

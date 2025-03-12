@@ -13,7 +13,6 @@
     top: var(--header-height);
     bottom: 0;
     background-color: var(--background);
-    padding: 0 1rem;
     width: 100%;
 }
 </style>
