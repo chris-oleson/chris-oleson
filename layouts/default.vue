@@ -1,6 +1,6 @@
 <template>
 <div>
-    <landing-header/>
+    <top-bar/>
     <div class="content">
         <slot/>
     </div>

@@ -84,6 +84,36 @@ p {
     }
 }
 
+header {
+    backdrop-filter: blur(3px);
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 1rem;
+    right: 1rem;
+
+    & > div {
+        height: var(--header-height);
+        margin: auto;
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & div {
+            display: flex;
+            gap: 1rem;
+        }
+
+        @media (max-width: 640px) {
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            --header-height: 7rem;
+        }
+    }
+}
+
 blockquote {
     margin: 0;
     padding-left: 1rem;
