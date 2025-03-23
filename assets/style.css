@@ -105,12 +105,17 @@ header {
             gap: 1rem;
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 500px) {
             flex-direction: column;
             justify-content: center;
             gap: 1rem;
-            --header-height: 7rem;
         }
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        --header-height: 7rem;
     }
 }
 
