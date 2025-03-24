@@ -51,6 +51,7 @@ body {
     background-color: var(--background);
 }
 
+/* Text */
 h1 {
     font-size: 3rem;
     font-weight: 100;
@@ -84,6 +85,7 @@ p {
     }
 }
 
+/* Headers */
 header {
     backdrop-filter: blur(3px);
     z-index: 20;
@@ -136,6 +138,7 @@ a {
     }
 }
 
+/* Dividers */
 hr, .horizontal.divider {
     border: none;
     border-bottom: 1px solid var(--accent);
@@ -163,8 +166,40 @@ code, .code {
     width: 100%;
 }
 
+/* Sections */
+section, .section {
+    color: var(--text);
+    background-color: var(--background);
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    & > * {
+        max-width: 800px;
+    }
+    &.full.width {
+        & > * {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &.secondary {
+        background-color: var(--secondary);
+    }
+    &.accent {
+        background-color: var(--accent);
+    }
+    &.full.height {
+        min-height: 100%;
+        padding-top: 0;
+        padding-bottom: var(--header-height);
+    }
+}
+
 /* Buttons */
-.button {
+button, .button {
     letter-spacing: 1.25px;
     display: block;
     font-size: 1em;
@@ -325,7 +360,7 @@ code, .code {
 }
 
 /* Checkboxes*/
-.checkbox {
+input[type="checkbox"] {
     height: 2rem;
     width: 2rem;
     margin: 0;
@@ -482,36 +517,4 @@ code, .code {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-}
-
-/* Sections */
-.section {
-    color: var(--text);
-    background-color: var(--background);
-    padding: 5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    & > * {
-        max-width: 800px;
-    }
-    &.full.width {
-        & > * {
-            width: 100%;
-            max-width: 100%;
-        }
-    }
-    &.secondary {
-        background-color: var(--secondary);
-    }
-    &.accent {
-        background-color: var(--accent);
-    }
-    &.full.height {
-        min-height: 100%;
-        padding-top: 0;
-        padding-bottom: var(--header-height);
-    }
 }

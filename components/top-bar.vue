@@ -14,11 +14,11 @@
             <a class="big simple icon button" title="linkedin.com/in/chris-oleson" href="https://www.linkedin.com/in/chris-oleson" target="_blank" rel="noopener noreferrer">
                 <Icon name="mdi:linkedin"/>
             </a>
-            <a class="big simple icon button" title="chris@oleson.family" href="mailto:chris@oleson.family">
-                <Icon name="mdi:email"/>
-            </a>
             <a class="big simple icon button" title="Denver, Colorado" href="https://www.google.com/maps/place/Denver,+CO" target="_blank" rel="noopener noreferrer">
                 <Icon name="mdi:location"/>
+            </a>
+            <a class="big simple icon button" title="chris@oleson.family" href="mailto:chris@oleson.family">
+                <Icon name="mdi:email"/>
             </a>
         </div>
     </div>

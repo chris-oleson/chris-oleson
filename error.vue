@@ -1,9 +1,9 @@
 <template>
 <NuxtLayout>
-    <div class="full height section">
+    <section class="full height section">
         <h1>{{ error.message }}</h1>
         <nuxt-link class="big border button" to="/">Return to home page</nuxt-link>
-    </div>
+    </section>
 </NuxtLayout>
 </template>
 

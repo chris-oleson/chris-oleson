@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="section">
+    <section>
         <h2>Projects</h2>
         <div class="row">
             <a href="https://vufi.app" target="_blank" rel="noopener noreferrer" class="project card">
@@ -33,9 +33,9 @@
                 </p>
             </a>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section>
         <h2>Technologies</h2>
         <div class="row">
             <div class="tech card">
@@ -102,7 +102,7 @@
                 <h3 class="">Plaid</h3>
             </div>
         </div>
-    </div>
+    </section>
 </div>
 </template>
 

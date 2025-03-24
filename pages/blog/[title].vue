@@ -1,11 +1,11 @@
 <template>
-<div v-if="post" class="section">
+<section v-if="post">
     <content-renderer :value="post" />
-</div>
-<div v-else class="full height section">
+</section>
+<section v-else class="full height section">
     <h1>Page not found: {{ route.path.split('/').pop() }}</h1>
     <nuxt-link class="big border button" to="/">Return to home page</nuxt-link>
-</div>
+</section>
 </template>
 
 <script setup>

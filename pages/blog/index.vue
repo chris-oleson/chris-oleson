@@ -1,10 +1,10 @@
 <template>
-    <div class="full height section">
+    <section class="full height section">
         <nuxt-link v-for="(post, i) in data" class="card" :to="post.path">
             <h2>{{ post.title }}</h2>
             <p>{{ post.date }}</p>
         </nuxt-link>
-    </div>
+    </section>
 </template>
 
 <script setup>
