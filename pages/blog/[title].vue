@@ -15,10 +15,9 @@ const { data: post } = await useAsyncData(route.path, () => {
 })
 
 useSeoMeta({
-  title: post.value.title + ' - Chris Oleson',
-  ogTitle: post.value.title,
-  description: 'Chris Oleson',
-  ogDescription: 'Chris Oleson',
-  ogImage: '/favicon.svg',
+    title: post.value.title + ' - Chris Oleson',
+    ogTitle: post.value.title,
+    author: 'Chris Oleson',
+    ogImage: 'https://chrisoleson.dev/favicon.svg',
 })
 </script>
