@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             link: [
-                { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+                { rel: 'icon', type: 'image/png', href: '/favicon.svg' }
             ],
             meta: [
                 { name: 'description', content: 'Web developer - UI designer - Entrepreneur' }

@@ -13,5 +13,12 @@ const route = useRoute()
 const { data: post } = await useAsyncData(route.path, () => {
     return queryCollection('blog').path(route.path).first()
 })
-useHead({ title: post.value.title + ' - Chris Oleson' })
+
+useSeoMeta({
+  title: post.value.title + ' - Chris Oleson',
+  ogTitle: post.value.title,
+  description: 'Chris Oleson',
+  ogDescription: 'Chris Oleson',
+  ogImage: '/favicon.svg',
+})
 </script>
