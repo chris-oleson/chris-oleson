@@ -18,6 +18,6 @@ useSeoMeta({
     title: post.value.title + ' - Chris Oleson',
     ogTitle: post.value.title,
     author: 'Chris Oleson',
-    ogImage: 'https://chrisoleson.dev/favicon.svg',
+    ogImage: 'https://chrisoleson.dev/images/fish.png',
 })
 </script>
