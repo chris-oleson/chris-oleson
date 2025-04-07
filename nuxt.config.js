@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     app: {
         head: {
             link: [
-                { rel: 'icon', href: '/favicon.svg' }
+                { rel: 'icon', href: '/favicon.svg' },
+                { rel: 'icon', href: '/favicon.png' }
             ],
             htmlAttrs: {
                 lang: 'en'
