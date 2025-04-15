@@ -38,67 +38,67 @@
         <h2>Technologies</h2>
         <div class="row">
             <div class="tech card">
-                <h3 class="">HTML</h3>
+                <h3>HTML</h3>
             </div>
             <div class="tech card">
-                <h3 class="">CSS</h3>
+                <h3>CSS</h3>
             </div>
             <div class="tech card">
-                <h3 class="">JavaScript</h3>
+                <h3>JavaScript</h3>
             </div>
             <div class="tech card">
-                <h3 class="">TypeScript</h3>
+                <h3>TypeScript</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Vue</h3>
+                <h3>Vue</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Express</h3>
+                <h3>Express</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Node</h3>
+                <h3>Node</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Nuxt</h3>
+                <h3>Nuxt</h3>
             </div>
             <div class="tech card">
-                <h3 class="">MySQL</h3>
+                <h3>MySQL</h3>
             </div>
             <div class="tech card">
-                <h3 class="">SQLite</h3>
+                <h3>SQLite</h3>
             </div>
             <div class="tech card">
-                <h3 class="">React</h3>
+                <h3>React</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Wordpress</h3>
+                <h3>Wordpress</h3>
             </div>
             <div class="tech card">
-                <h3 class="">PHP</h3>
+                <h3>PHP</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Tailwind</h3>
+                <h3>Tailwind</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Python</h3>
+                <h3>Python</h3>
             </div>
             <div class="tech card">
-                <h3 class="">FastAPI</h3>
+                <h3>FastAPI</h3>
             </div>
             <div class="tech card">
-                <h3 class="">C#</h3>
+                <h3>C#</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Git</h3>
+                <h3>Git</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Postmark</h3>
+                <h3>Postmark</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Stripe</h3>
+                <h3>Stripe</h3>
             </div>
             <div class="tech card">
-                <h3 class="">Plaid</h3>
+                <h3>Plaid</h3>
             </div>
         </div>
     </section>
