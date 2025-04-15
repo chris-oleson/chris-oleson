@@ -24,7 +24,7 @@
                     I recently rewrote it using bluprint as my starting point.
                 </p>
             </a>
-            <a href="https://cinematrix.site" target="_blank" rel="noopener noreferrer" class="project card">
+            <a href="https://cinematrix.chrisoleson.dev" target="_blank" rel="noopener noreferrer" class="project card">
                 <h3>Cinematrix</h3>
                 <p>
                     Built over a weekend for a job interview, Cinematrix showcases a beautiful UI,
