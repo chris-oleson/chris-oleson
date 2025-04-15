@@ -6,9 +6,8 @@
             <a href="https://vufi.app" target="_blank" rel="noopener noreferrer" class="project card">
                 <h3>VuFi</h3>
                 <p>
-                    As my first self-built commercial web application,
-                    VuFi is built with a Vue frontend and an Express backend.
-                    The github repository is private for security reasons.
+                    VuFi a web app for tracking financial assets and liabilities.
+                    It is written in Nuxt, but the github repository is private for security reasons.
                 </p>
             </a>
             <a href="https://bluprint.chrisoleson.dev" target="_blank" rel="noopener noreferrer" class="project card">
@@ -19,7 +18,7 @@
                 </p>
             </a>
             <a href="https://chrisoleson.dev" target="_blank" rel="noopener noreferrer" class="project card">
-                <h3>Chris Oleson</h3>
+                <h3>chrisoleson.dev</h3>
                 <p>
                     This is the site you are currently using, which acts as a business card, portfolio, and blog.
                     I recently rewrote it using bluprint as my starting point.
