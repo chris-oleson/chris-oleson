@@ -4,7 +4,7 @@
 </section>
 <section v-else class="full height section">
     <h1>Page not found: {{ route.path.split('/').pop() }}</h1>
-    <nuxt-link class="big border button" to="/">Return to home page</nuxt-link>
+    <FishButton big border to="/" text="Return to home page"/>
 </section>
 </template>
 
@@ -15,8 +15,8 @@ const { data: post } = await useAsyncData(route.path, () => {
 })
 
 useSeoMeta({
-    title: post.value.title + ' - Chris Oleson',
-    ogTitle: post.value.title,
+    title: post.value?.title + ' - Chris Oleson',
+    ogTitle: post.value?.title,
     author: 'Chris Oleson',
     ogImage: 'https://chrisoleson.dev/images/fish.png',
 })

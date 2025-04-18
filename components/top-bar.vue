@@ -1,26 +1,18 @@
 <template>
-<header>
-    <div>
+    <header>
         <div>
-            <nuxt-link class="simple button" to="/">Home</nuxt-link>
-            <nuxt-link class="simple button" style="margin: 0 1rem;" to="/portfolio">Portfolio</nuxt-link>
-            <nuxt-link class="simple button" to="/blog">Blog</nuxt-link>
-        </div>
+            <div>
+                <FishButton simple to="/" text="Home"/>
+                <FishButton simple to="/portfolio" text="Portfolio"/>
+                <FishButton simple to="/blog" text="Blog"/>
+            </div>
 
-        <div>
-            <a class="big simple icon button" title="github.com/chris-oleson" href="https://github.com/chris-oleson" target="_blank" rel="noopener noreferrer">
-                <Icon name="mdi:github"/>
-            </a>
-            <a class="big simple icon button" title="linkedin.com/in/chris-oleson" href="https://www.linkedin.com/in/chris-oleson" target="_blank" rel="noopener noreferrer">
-                <Icon name="mdi:linkedin"/>
-            </a>
-            <a class="big simple icon button" title="Denver, Colorado" href="https://www.google.com/maps/place/Denver,+CO" target="_blank" rel="noopener noreferrer">
-                <Icon name="mdi:location"/>
-            </a>
-            <a class="big simple icon button" title="chris@oleson.family" href="mailto:chris@oleson.family">
-                <Icon name="mdi:email"/>
-            </a>
+            <div>
+                <FishButton big simple newTab to="https://github.com/chris-oleson" title="github.com/chris-oleson" icon="mdi:github"/>
+                <FishButton big simple newTab to="https://www.linkedin.com/in/chris-oleson" title="https://www.linkedin.com/in/chris-oleson" icon="mdi:linkedin"/>
+                <FishButton big simple newTab to="https://www.google.com/maps/place/Denver,+CO" title="Denver, Colorado" icon="mdi:location"/>
+                <FishButton big simple to="mailto:chris@oleson.family" title="chris@oleson.family" icon="mdi:email"/>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 </template>
