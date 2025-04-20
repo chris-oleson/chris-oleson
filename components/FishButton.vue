@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink v-if="to" :to="to" :class="classes" :target="newTab ? '_target' : ''">
+    <NuxtLink v-if="to" :to="to" :class="classes" :target="newTab ? '_blank' : ''" :rel="newTab ? 'noopener' : ''">
         <Icon v-if="icon" :name="icon"/>
         <slot>{{ text }}</slot>
     </NuxtLink>
