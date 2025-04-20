@@ -3,28 +3,28 @@
     <section>
         <h2>Projects</h2>
         <div class="row">
-            <a href="https://vufi.app" target="_blank" rel="noopener noreferrer" class="project card">
+            <a href="https://vufi.app" target="_blank" rel="noopener" class="project card">
                 <h3>VuFi</h3>
                 <p>
                     VuFi a web app for tracking financial assets and liabilities.
                     It is written in Nuxt, but the github repository is private for security reasons.
                 </p>
             </a>
-            <a href="https://bluprint.chrisoleson.dev" target="_blank" rel="noopener noreferrer" class="project card">
+            <a href="https://bluprint.chrisoleson.dev" target="_blank" rel="noopener" class="project card">
                 <h3>bluprint</h3>
                 <p>
                     bluprint is a saas boilerplate framework for launching web app MVPs quickly.
                     It is built with Nuxt to improve the speed of one-man development.
                 </p>
             </a>
-            <a href="https://chrisoleson.dev" target="_blank" rel="noopener noreferrer" class="project card">
+            <a href="https://chrisoleson.dev" target="_blank" rel="noopener" class="project card">
                 <h3>chrisoleson.dev</h3>
                 <p>
                     This is the site you are currently using, which acts as a business card, portfolio, and blog.
                     I recently rewrote it using bluprint as my starting point.
                 </p>
             </a>
-            <a href="https://cinematrix.chrisoleson.dev" target="_blank" rel="noopener noreferrer" class="project card">
+            <a href="https://cinematrix.chrisoleson.dev" target="_blank" rel="noopener" class="project card">
                 <h3>Cinematrix</h3>
                 <p>
                     Built over a weekend for a job interview, Cinematrix showcases a beautiful UI,
