@@ -132,6 +132,7 @@ blockquote {
     border-radius: .25rem 0 0 .25rem;
 }
 
+/* Links */
 a {
     font-size: 1rem;
     font-weight: 300;
@@ -162,17 +163,11 @@ hr, .horizontal.divider {
 }
 
 /* Code */
-code, .code {
+code {
     font-family: 'Roboto Mono', monospace;
     background-color: var(--low-accent);
     padding: 0 .25rem;
     border-radius: .25rem;
-}
-
-/* Images */
-.image {
-    display: block;
-    width: 100%;
 }
 
 /* Sections */
@@ -204,30 +199,6 @@ section, .section {
         min-height: 100%;
         padding-top: 0;
         padding-bottom: var(--header-height);
-    }
-}
-
-/* Links */
-.link {
-    color: var(--primary);
-    text-decoration: inherit;
-}
-
-/* Privacy mode */
-.blur {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 0 0 10px var(--text);
-}
-
-/* Dashboards */
-.dashboard {
-    background-color: var(--low-accent);
-    min-height: 100%;
-    padding: .5rem;
-    border-radius: .5rem 0 0 0;
-    &.centered {
-        align-content: center;
-        justify-content: center;
     }
 }
 
