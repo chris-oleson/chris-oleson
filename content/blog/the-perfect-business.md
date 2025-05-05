@@ -1,5 +1,5 @@
 ---
-title: Small Business Models
+title: The Perfect Business
 date: 2025-05-04
 ---
 
@@ -9,7 +9,7 @@ date: 2025-05-04
 
 ---
 
-## The Perfect Business
+## Fairy Tales
 
 If you were going to start a company, what qualities would you look for in an ideal business model? Running your own company has a lot of downsides, so what would help ease those pain points? Let's take a look at the qualities of the perfect business:
 
