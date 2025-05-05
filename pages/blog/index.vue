@@ -18,5 +18,8 @@ const { data } = await useAsyncData('/blog', () => {
 <style scoped>
 .card {
     width: 100%;
+    & h2 {
+        margin: 0;
+    }
 }
 </style>
