@@ -14,14 +14,14 @@ date: 2025-05-04
 If you were going to start a company, what qualities would you look for in an ideal business model? Running your own company has a lot of downsides, so what would help ease those pain points? Let's take a look at the qualities of the perfect business:
 
 - **No investment requirements.** If you run a business, many of them require capital. A perfect business could be started in a garage, or better yet, a studio apartment. Garages are pretty hard to come by nowadays.
-- **No board of directors.** Running a business is about freedom; you don't want to trade your 9-5 boss with multiple 24-7 bosses.
+- **No board of directors.** Running a business is about freedom; you don't want to trade your 9-5 boss for multiple 24-7 bosses.
 - **No employees.** Managing people is an entire profession of its own. You want to manage a business and not be distracted by petty social disputes.
 - **No overhead costs.** Managing your supply chain takes time. Managing your expenses takes time. You should be able to run your business without needing to rely on others.
 - **A flexible schedule.** You should be able to take a week off if you need to, and not have to put out fires when you return.
 - **Fixed labor costs.** There should not be a direct correlation between the amount of labor involved in running the business to the amount of revenue it brings in.
 - **A large market.** You should have such a large pool of potential customers that competition will not bother you or your competitors.
 
-These requirements might sound unrealistic, but surprisingly, a few types of business models come pretty close to fulfilling them. There’s one type of business, however, that checks every box, and is increasingly more relevant as our present economic landscape continues to change.
+These requirements might sound unrealistic, but surprisingly, a few types of business models come pretty close to fulfilling them. There’s one type of business, however, that checks every box, and is increasingly more relevant in the current economic landscape.
 
 ---
 
