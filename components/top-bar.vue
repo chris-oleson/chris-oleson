@@ -17,3 +17,38 @@
         </div>
     </header>
 </template>
+
+<style scoped>
+header {
+    backdrop-filter: blur(3px);
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 1rem;
+    right: 1rem;
+
+    & > div {
+        height: var(--header-height);
+        margin: auto;
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & div {
+            display: flex;
+            gap: 1rem;
+        }
+
+        & :first-child {
+            gap: 2rem;
+        }
+
+        @media (max-width: 550px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+}
+</style>
