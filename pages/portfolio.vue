@@ -4,7 +4,10 @@
         <h2>Projects</h2>
         <div class="row">
             <a href="https://vufi.app" target="_blank" rel="noopener" class="project card">
-                <h3>VuFi</h3>
+                <div class="project-title">
+                    <NuxtImg src="/images/vufi.svg" height="24" width="24"/>
+                    <h3>VuFi</h3>
+                </div>
                 <p>
                     VuFi a web app for tracking financial assets and liabilities.
                     It is written in Nuxt, but the github repository is private for security reasons.
@@ -18,14 +21,20 @@
                 </p>
             </a>
             <a href="https://chrisoleson.dev" target="_blank" rel="noopener" class="project card">
-                <h3>chrisoleson.dev</h3>
+                <div class="project-title">
+                    <NuxtImg src="/images/fish.png" height="24" width="24"/>
+                    <h3>chrisoleson.dev</h3>
+                </div>
                 <p>
                     This is the site you are currently using, which acts as a business card, portfolio, and blog.
                     I recently rewrote it using bluprint as my starting point.
                 </p>
             </a>
             <a href="https://cinematrix.chrisoleson.dev" target="_blank" rel="noopener" class="project card">
-                <h3>Cinematrix</h3>
+                <div class="project-title">
+                    <NuxtImg src="/images/cinematrix.png" height="24" width="24"/>
+                    <h3>Cinematrix</h3>
+                </div>
                 <p>
                     Built over a weekend for a job interview, Cinematrix showcases a beautiful UI,
                     third party API integrations, and a secure authentication system.
@@ -132,5 +141,12 @@ h2 {
     font-size: 3rem;
     font-weight: 100;
     text-align: center;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
 }
 </style>
