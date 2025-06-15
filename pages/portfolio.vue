@@ -101,7 +101,10 @@
                 <h3>Git</h3>
             </div>
             <div class="tech card">
-                <h3>Postmark</h3>
+                <h3>Coolify</h3>
+            </div>
+            <div class="tech card">
+                <h3>Linux</h3>
             </div>
             <div class="tech card">
                 <h3>Stripe</h3>
