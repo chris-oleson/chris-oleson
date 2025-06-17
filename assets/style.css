@@ -82,8 +82,7 @@ p {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5rem;
-    margin: .5rem 0;
-    text-align: justify;
+    margin: 1rem 0;
 }
 
 @media (max-width: 550px) {
