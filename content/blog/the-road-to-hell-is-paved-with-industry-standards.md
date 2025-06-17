@@ -31,9 +31,9 @@ The point is that while it's not necessarily a bad idea to use something that is
 
 ## Good Reasons
 
-Here are some good reasons for a business to use something:
+Here are some good reasons for a business to use a certain tool or process:
 
-- A lot of people already use the tool, so we'll have an easy time hiring.
+- A lot of people already use it, so we'll have an easy time hiring.
 - Its creators are dedicated to supporting it far into the future.
 - It has extensive documentation and non-standard use cases are all worked out.
 - There's a large aftermarket of parts or plugins to do a lot of the work for us.
