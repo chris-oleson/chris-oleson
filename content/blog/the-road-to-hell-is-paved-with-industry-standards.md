@@ -29,7 +29,7 @@ The point is that while it's not necessarily a bad idea to use something that is
 
 ---
 
-## Good Reasons
+## Correlation Is Not Causation
 
 Here are some good reasons for a business to use a certain tool or process:
 
@@ -38,6 +38,6 @@ Here are some good reasons for a business to use a certain tool or process:
 - It has extensive documentation and non-standard use cases are all worked out.
 - There's a large aftermarket of parts or plugins to do a lot of the work for us.
 
-I'm giving these examples specifically because they are often correlated with using industry standards, and I think this is why people automatically assume it's a good thing. However, this is clearly not always the case. There is not an intrinsic cause-and-effect relationship between standardization and the example benefits above; correlation is not causation and all that. In fact, I would argue that these benefits are the reason for certain tools and methods becoming industry standards in the first place! But even if those benefits cease to exist, the technologies can continue being used far into the future due to the inerta of standardization.
+I'm giving these examples specifically because they are often correlated with using industry standards, and I think this is why people automatically assume it's a good thing. However, this is clearly not always the case. There is not an intrinsic cause-and-effect relationship between standardization and the example benefits above. In fact, I would argue that these benefits are often the reason for certain tools and methods becoming industry standards in the first place! But even if those benefits cease to exist, the technologies can continue being used far into the future due to the inerta of standardization.
 
 When people say that an industry is "stagnating", they usually mean that the companies in the industry are not innovating. Oftentimes, however, what people see as innovation is just shedding the pressure of outdated and irrelevant standards in order to bring value to customers as efficiently as they can. Maybe it's time to take a hard look at the tools and processes your business is using, and ask yourself if they are there for another reason than just being an Industry Standard.
