@@ -38,71 +38,8 @@
         <section>
             <h2>Technologies</h2>
             <div class="row">
-                <div class="tech card">
-                    <h3>HTML</h3>
-                </div>
-                <div class="tech card">
-                    <h3>CSS</h3>
-                </div>
-                <div class="tech card">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="tech card">
-                    <h3>TypeScript</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Vue</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Express</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Node</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Nuxt</h3>
-                </div>
-                <div class="tech card">
-                    <h3>MySQL</h3>
-                </div>
-                <div class="tech card">
-                    <h3>SQLite</h3>
-                </div>
-                <div class="tech card">
-                    <h3>React</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Wordpress</h3>
-                </div>
-                <div class="tech card">
-                    <h3>PHP</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Tailwind</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Python</h3>
-                </div>
-                <div class="tech card">
-                    <h3>FastAPI</h3>
-                </div>
-                <div class="tech card">
-                    <h3>C#</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Git</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Coolify</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Linux</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Stripe</h3>
-                </div>
-                <div class="tech card">
-                    <h3>Plaid</h3>
+                <div v-for="technology in technologies" class="tech card">
+                    <h3>{{ technology }}</h3>
                 </div>
             </div>
         </section>
@@ -111,6 +48,33 @@
 
 <script setup>
 useHead ({ title: 'Portfolio - Chris Oleson' })
+
+const technologies = [
+    'HTML',
+    'Javascript',
+    'Typescript',
+    'Vue',
+    'Nuxt',
+    'React',
+    'Next',
+    'Node',
+    'Express',
+    'PHP',
+    'Wordpress',
+    'Python',
+    'FastAPI',
+    'C#',
+    'CSS',
+    'Tailwind',
+    'SCSS',
+    'MySQL',
+    'MariaDB',
+    'SQLite',
+    'Git',
+    'Linux',
+    'Stripe',
+    'Plaid',
+]
 </script>
 
 <style scoped>
