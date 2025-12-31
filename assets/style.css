@@ -29,7 +29,7 @@
 }
 
 /* Dark mode theme */
-.dark-mode {
+.dark {
     --secondary: #23313d;
     --text: #ffffff;
     --text-disabled: rgba(255, 255, 255, 0.5);
