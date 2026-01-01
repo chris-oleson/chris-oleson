@@ -27,6 +27,7 @@ useHead ({ title: 'Chris Oleson' })
     }
     & img {
         border-radius: 50%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .5);
     }
 }
 
