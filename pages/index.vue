@@ -33,6 +33,5 @@ useHead ({ title: 'Chris Oleson' })
 
 h2 {
     font-size: 1.5rem;
-    text-align: justify;
 }
 </style>
