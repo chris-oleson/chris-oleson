@@ -90,6 +90,9 @@ const technologies = [
         min-width: fit-content;
         min-height: 0;
     }
+    &:hover {
+        background-color: var(--secondary);
+    }
 }
 
 p {
@@ -100,6 +103,12 @@ h2 {
     font-size: 3rem;
     font-weight: 100;
     text-align: center;
+}
+
+.row {
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .project-title {

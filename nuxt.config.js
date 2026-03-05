@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-02-10',
+
     app: {
         head: {
             link: [
@@ -13,19 +14,29 @@ export default defineNuxtConfig({
             }
         }
     },
+
     css: ['/assets/style.css'],
+
     modules: [
-        '@nuxtjs/color-mode',
-        '@nuxt/icon',
-        '@nuxt/image',
-        '@nuxt/content'
+      '@nuxtjs/color-mode',
+      '@nuxt/icon',
+      '@nuxt/image',
+      '@nuxt/content',
+      '@nuxt/fonts'
     ],
+
     devtools: {
         enabled: false
     },
+
     content: {
         renderer: {
             anchorLinks: false
         }
-    }
+    },
+    fonts: {
+        defaults: {
+            weights: [200, 300, 500, 900],
+        }
+    },
 })

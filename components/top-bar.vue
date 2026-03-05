@@ -1,21 +1,21 @@
 <template>
-    <header>
+<header>
+    <div>
         <div>
-            <div>
-                <FishButton simple to="/" text="Home"/>
-                <FishButton simple to="/portfolio" text="Portfolio"/>
-                <FishButton simple to="/blog" text="Blog"/>
-            </div>
-
-            <div>
-                <FishButton big simple newTab to="https://github.com/chris-oleson" title="GitHub" icon="mdi:github"/>
-                <FishButton big simple newTab to="https://www.linkedin.com/in/chris-oleson" title="LinkedIn" icon="mdi:linkedin"/>
-                <FishButton big simple newTab to="https://www.google.com/maps/place/Denver,+CO" title="Denver, Colorado" icon="mdi:location"/>
-                <FishButton big simple to="mailto:chris@oleson.family" title="chris@oleson.family" icon="mdi:email"/>
-                <FishButton big simple newTab to="https://buy.stripe.com/aEUaGJ7iH1aO9e84gg" title="Buy me a coffee" icon="mdi:coffee"/>
-            </div>
+            <FishButton simple to="/">Home</FishButton>
+            <FishButton simple to="/portfolio">Portfolio</FishButton>
+            <FishButton simple to="/blog">Blog</FishButton>
         </div>
-    </header>
+
+        <div>
+            <FishButton simple newTab to="https://github.com/chris-oleson" title="GitHub"><Icon name="mdi:github"/></FishButton>
+            <FishButton simple newTab to="https://www.linkedin.com/in/chris-oleson" title="LinkedIn"><Icon name="mdi:linkedin"/></FishButton>
+            <FishButton simple newTab to="https://www.google.com/maps/place/Denver,+CO" title="Denver, Colorado"><Icon name="mdi:location"/></FishButton>
+            <FishButton simple to="mailto:chris@oleson.family" title="chris@oleson.family"><Icon name="mdi:email"/></FishButton>
+            <FishButton simple newTab to="https://buy.stripe.com/aEUaGJ7iH1aO9e84gg" title="Buy me a coffee"><Icon name="mdi:coffee"/></FishButton>
+        </div>
+    </div>
+</header>
 </template>
 
 <style scoped>
@@ -24,11 +24,11 @@ header {
     z-index: 20;
     position: fixed;
     top: 0;
-    left: 1rem;
-    right: 1rem;
+    left: 0;
+    right: 0;
 
     & > div {
-        height: var(--header-height);
+        padding: 1rem;
         margin: auto;
         max-width: 800px;
         display: flex;

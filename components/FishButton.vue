@@ -1,145 +1,118 @@
 <template>
-    <NuxtLink v-if="to" :to="to" :class="classes" :target="newTab ? '_blank' : ''" :rel="newTab ? 'noopener' : ''">
-        <Icon v-if="icon" :name="icon"/>
-        <slot>{{ text }}</slot>
-    </NuxtLink>
-
-    <button v-else :class="classes">
-        <Icon v-if="icon" :name="icon"/>
-        <slot>{{ text }}</slot>
-    </button>
+<NuxtLink v-if="to" :to="to" :disabled="disabled" :class="classes" draggable="false" :target="newTab ? '_blank' : ''"><slot/></NuxtLink>
+<button v-else :disabled="disabled" :class="classes" draggable="false"><slot/></button>
 </template>
 
 <script setup>
 const props = defineProps({
-    text: { type: String, default: '' },
-    to: { type: String, default: '' },
-    primary: Boolean,
-    border: Boolean,
-    background: Boolean,
+    to: String,
     simple: Boolean,
     big: Boolean,
     small: Boolean,
     selected: Boolean,
     disabled: Boolean,
-    newTab: Boolean,
     error: Boolean,
-    icon: { type: String, default: '' }
+    round: Boolean,
+    secondary: Boolean,
+    chip: Boolean,
+    newTab: Boolean,
 })
 
 const classes = computed(() => ({
-    primary: props.primary,
-    border: props.border,
-    background: props.background,
     simple: props.simple,
     big: props.big,
     small: props.small,
     selected: props.selected,
     disabled: props.disabled,
     error: props.error,
-    icon: props.icon,
-    text: props.text,
+    round: props.round,
+    secondary: props.secondary,
+    chip: props.chip
 }))
 </script>
 
 <style scoped>
 button, a {
-    padding: .5em 1em;
+    color: var(--text-primary);
+    padding: 0 .5rem;
     letter-spacing: 1.25px;
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
     justify-content: center;
-    font-weight: 300;
-    font-size: 1em;
+    font-weight: var(--bold-weight);
+    font-size: 1rem;
     text-transform: uppercase;
     text-decoration: inherit;
-    min-width: fit-content;
+    width: fit-content;
+    height: 2rem;
     border: none;
-    border-radius: .5em;
-    transition-duration: .2s;
-    line-height: 1em;
+    border-radius: var(--border-radius);
+    transition-duration: .3s;
     user-select: none;
     outline: none;
     cursor: pointer;
-    height: fit-content;
-    &.primary {
-        color: white;
-        background-color: var(--primary);
+    color: var(--white);
+    background-color: var(--primary);
+    box-shadow: var(--highlight-shadow);
+    text-wrap: nowrap;
+    &:is(:hover, :focus, .selected):not(.disabled) {
+        filter: brightness(1.2);
+    }
+    &:active:not(.disabled) {
+        filter: none;
+    }
+    &.round {
+        width: fit-content;
+        padding: .5rem;
+        border-radius: 50%;
+    }
+    &.secondary {
+        color: var(--text-primary);
+        background-color: var(--secondary);
         &:is(:hover, :focus, .selected):not(.disabled) {
-            filter: brightness(1.2);
-        }
-        &.error {
-            background-color: var(--error);
+            filter: var(--hover-brightness);
         }
     }
-    &.border {
-        color: var(--text);
-        border: 1px solid var(--accent);
-        background-color: transparent;
-        &.selected {
-            background-color: var(--accent);
-            border-color: transparent;
-        }
-        &:is(:hover, :focus):not(.disabled, .selected) {
-            border: 1px solid var(--text);
-        }
-        &.error {
-            color: var(--error);
-            border-color: var(--error);
-            &:is(:hover, :focus, .selected):not(.disabled) {
-                background-color: var(--error);
-                border-color: var(--error);
-                color: white;
-            }
-        }
-    }
-    &.background {
-        color: var(--text-accent);
-        background-color: transparent;
-        text-transform: none;
-        letter-spacing: normal;
-        &:is(:hover, :focus):not(.disabled, .selected) {
-            color: var(--text);
-        }
-        &.selected {
-            color: var(--text);
-            background-color: var(--accent);
-        }
-    }
-    &.selected {
-        pointer-events: none;
+    &.error {
+        color: var(--white);
+        background-color: var(--error);
     }
     &.disabled {
         opacity: .2;
         pointer-events: none;
     }
     &.big {
-        &.text {
-            padding: 1rem;
-            & .iconify {
-                font-size: 1.5rem;
-            }
-        }
-        &:not(.text) {
-            font-size: 2rem;
-        }
+        gap: 1rem;
+        padding: 0 1rem;
+        font-size: 1.25rem;
+        height: 3rem;
     }
     &.small {
         font-size: .75rem;
-    }
-    &:not(.text) {
-        border-radius: 50%;
-        font-size: 1.5rem;
-        padding: .5rem;
+        height: 1.5rem;
     }
     &.simple {
-        color: var(--text-accent);
+        color: var(--text-secondary);
         padding: 0;
         background-color: transparent;
+        border-radius: 0;
+        position: relative;
+        box-shadow: none;
+        filter: none;
         &:is(:hover, :focus, .selected):not(.disabled) {
-            color: var(--text);
+            color: var(--text-primary);
         }
+    }
+    &.chip {
+        padding: 0 .5rem;
+        border-radius: 999px;
+        border: none;
+        text-wrap: nowrap;
+        text-transform: none;
+        letter-spacing: 0px;
+        height: 1.5rem;
+        font-weight: var(--normal-weight);
     }
 }
 </style>

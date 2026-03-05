@@ -1,10 +1,11 @@
 <template>
-    <section class="full height section">
-        <nuxt-link v-for="(post, i) in data" class="card" :to="post.path">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.date }}</p>
-        </nuxt-link>
-    </section>
+<section>
+    <h1>Blog</h1>
+    <NuxtLink v-for="post in data" class="card" :to="post.path">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.date }}</p>
+    </NuxtLink>
+</section>
 </template>
 
 <script setup>
@@ -17,9 +18,19 @@ const { data } = await useAsyncData('/blog', () => {
 
 <style scoped>
 .card {
-    width: 100%;
+    min-width: 100%;
     & h2 {
         margin: 0;
     }
+    &:hover {
+        background-color: var(--secondary);
+    }
+}
+
+section {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 </style>

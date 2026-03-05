@@ -1,18 +1,13 @@
 <template>
 <div>
     <top-bar/>
-    <div class="content">
-        <slot/>
-    </div>
+    <main><slot/></main>
 </div>
 </template>
 
 <style scoped>
-.content {
-    position: absolute;
-    top: var(--header-height);
-    bottom: 0;
+main {
     background-color: var(--background);
-    width: 100%;
+    min-height: 100vh;
 }
 </style>
