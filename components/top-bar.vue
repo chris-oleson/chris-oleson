@@ -30,7 +30,7 @@ header {
     & > div {
         padding: 1rem;
         margin: auto;
-        max-width: 800px;
+        max-width: 1000px;
         display: flex;
         justify-content: space-between;
         align-items: center;
