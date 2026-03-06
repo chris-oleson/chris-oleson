@@ -1,7 +1,7 @@
 <template>
     <div data-aos="fade-in">
         <section>
-            <h2>Projects</h2>
+            <h1>Projects</h1>
             <div class="row">
                 <a href="https://vufi.app" target="_blank" rel="noopener" class="project card">
                     <div class="project-title">
@@ -36,7 +36,7 @@
         </section>
 
         <section>
-            <h2>Technologies</h2>
+            <h1 style="margin-top: 0;">Technologies</h1>
             <div class="row">
                 <div v-for="technology in technologies" class="tech card">
                     <h3>{{ technology }}</h3>
@@ -82,10 +82,8 @@ const technologies = [
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-width: 17em;
-    min-height: 13rem;
-    max-width: 396px;
+    justify-content: start;
+    min-width: 250px;
     &.tech {
         min-width: fit-content;
         min-height: 0;
@@ -93,16 +91,6 @@ const technologies = [
     &:hover {
         background-color: var(--secondary);
     }
-}
-
-p {
-    text-align: start;
-}
-
-h2 {
-    font-size: 3rem;
-    font-weight: 100;
-    text-align: center;
 }
 
 .row {
@@ -116,5 +104,9 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: .5rem;
+}
+
+h3 {
+    margin: 0;
 }
 </style>

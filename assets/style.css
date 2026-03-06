@@ -115,7 +115,6 @@ s {
 a {
     color: var(--text-secondary);
     transition-duration: .2s;
-    text-align: center;
     text-decoration: none;
     &:hover {
         color: var(--text-primary)
@@ -161,7 +160,6 @@ section {
     border: 1px solid var(--accent);
     max-width: 400px;
     & > * {
-        text-align: center;
         margin: 0;
     }
 }
