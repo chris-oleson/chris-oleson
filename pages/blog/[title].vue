@@ -1,5 +1,5 @@
 <template>
-<section v-if="post" style="max-width: 1000px;">
+<section v-if="post" data-aos="fade-in" style="max-width: 1000px;">
     <content-renderer :value="post" />
 </section>
 <section v-else class="full height section">

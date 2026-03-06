@@ -22,7 +22,8 @@ export default defineNuxtConfig({
       '@nuxt/icon',
       '@nuxt/image',
       '@nuxt/content',
-      '@nuxt/fonts'
+      '@nuxt/fonts',
+      'nuxt-aos',
     ],
 
     devtools: {
@@ -34,9 +35,14 @@ export default defineNuxtConfig({
             anchorLinks: false
         }
     },
+
     fonts: {
         defaults: {
             weights: [200, 300, 500, 900],
         }
     },
+
+    aos: {
+        duration: 600
+    }
 })

@@ -1,5 +1,5 @@
 <template>
-<section>
+<section data-aos="fade-in">
     <h1>Blog</h1>
     <NuxtLink v-for="post in data" class="card" :to="post.path">
         <h2>{{ post.title }}</h2>

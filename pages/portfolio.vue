@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div data-aos="fade-in">
         <section>
             <h2>Projects</h2>
             <div class="row">

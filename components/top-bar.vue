@@ -1,5 +1,5 @@
 <template>
-<header>
+<header data-aos="fade-down">
     <div>
         <div>
             <FishButton simple to="/">Home</FishButton>
