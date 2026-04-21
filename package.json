@@ -9,19 +9,19 @@
         "postinstall": "nuxt prepare"
     },
     "dependencies": {
-        "@nuxt/content": "3.12.0",
+        "@nuxt/content": "3.13.0",
         "@nuxt/fonts": "0.14.0",
         "@nuxt/icon": "2.2.1",
         "@nuxt/image": "2.0.0",
         "@nuxtjs/color-mode": "4.0.0",
-        "better-sqlite3": "12.6.2",
-        "nuxt": "4.3.1",
+        "better-sqlite3": "12.9.0",
+        "nuxt": "4.4.2",
         "nuxt-aos": "1.2.6"
     },
     "devDependencies": {
         "@iconify-json/mdi": "1.2.3",
         "@nuxt/eslint": "1.15.2",
-        "eslint": "10.0.2"
+        "eslint": "10.2.1"
     },
     "engines": {
         "npm": "11.9.0",

@@ -2,7 +2,7 @@
 <section data-aos="fade-in">
     <div class="picture">
         <h1>Hi, I'm Chris.</h1>
-        <NuxtImg src="/images/profile-pic.png" height="200" width="200" alt="Chris Oleson"/>
+        <NuxtImg src="/images/profile-pic.jpeg" height="200" width="200" alt="Chris Oleson"/>
     </div>
     <h2>I'm a designer, engineer, and entrepreneur.</h2>
     <h2>Technology fascinates me; it's the perfect blend of creativity and problem-solving. If you're building something on the web, let's talk!</h2>
