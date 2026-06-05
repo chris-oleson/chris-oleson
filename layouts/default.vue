@@ -1,6 +1,6 @@
 <template>
-<div>
-    <top-bar/>
+<div style="position: relative;">
+    <FishHeader/>
     <main><slot/></main>
 </div>
 </template>

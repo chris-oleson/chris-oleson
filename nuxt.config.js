@@ -15,7 +15,10 @@ export default defineNuxtConfig({
         }
     },
 
-    css: ['/assets/style.css'],
+    css: [
+        '/assets/variables.css',
+        '/assets/global.css'
+    ],
 
     modules: [
       '@nuxtjs/color-mode',
@@ -38,7 +41,7 @@ export default defineNuxtConfig({
 
     fonts: {
         defaults: {
-            weights: [200, 300, 500, 900],
+            weights: [300, 400, 500, 900],
         }
     },
 

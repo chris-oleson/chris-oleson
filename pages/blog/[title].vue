@@ -21,3 +21,9 @@ useSeoMeta({
     ogImage: 'https://chrisoleson.dev/images/fish.png',
 })
 </script>
+
+<style scoped>
+:deep(h1) {
+    margin-top: var(--size10);
+}
+</style>

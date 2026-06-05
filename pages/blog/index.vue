@@ -2,7 +2,7 @@
 <section data-aos="fade-in">
     <h1>Blog</h1>
     <NuxtLink v-for="post in data" class="card" :to="post.path">
-        <h2>{{ post.title }}</h2>
+        <h3>{{ post.title }}</h3>
         <p>{{ post.date }}</p>
     </NuxtLink>
 </section>
@@ -18,12 +18,14 @@ const { data } = await useAsyncData('/blog', () => {
 
 <style scoped>
 .card {
+    display: flex;
+    flex-direction: column;
     min-width: 100%;
-    & h2 {
+    & p {
         margin: 0;
     }
     &:hover {
-        background-color: var(--secondary);
+        filter: brightness(var(--hover-brightness));
     }
 }
 
