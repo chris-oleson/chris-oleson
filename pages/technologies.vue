@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-useHead ({ title: 'Portfolio - Chris Oleson' })
+useHead ({ title: 'Technologies - Chris Oleson' })
 
 const technologies = [
     'HTML',
