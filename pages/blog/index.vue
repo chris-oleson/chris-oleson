@@ -1,5 +1,5 @@
 <template>
-    <section data-aos="fade-in">
+    <section>
         <h1 class="heading">Blog</h1>
         <NuxtLink v-for="post in data" class="card" :to="post.path">
             <h3>{{ post.title }}</h3>
@@ -24,6 +24,9 @@ const { data } = await useAsyncData('/blog', () => {
     min-width: 100%;
     &:hover {
         filter: brightness(var(--hover-brightness));
+    }
+    & h3 {
+        text-align: start;
     }
 }
 

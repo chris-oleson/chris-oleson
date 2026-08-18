@@ -47,5 +47,9 @@ export default defineNuxtConfig({
 
     aos: {
         duration: 600
+    },
+
+    experimental: {
+        viewTransition: true,
     }
 })
