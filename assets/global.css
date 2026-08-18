@@ -99,7 +99,7 @@ hr {
 }
 
 section {
-    padding: 8rem 2rem;
+    padding: 8rem 1rem;
     margin: 0 auto;
 
     &.secondary {
@@ -107,13 +107,17 @@ section {
     }
 
     & > * {
-        max-width: 878px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 }
 
 .card {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     padding: 1.5rem;
     border-radius: var(--border-radius);
     background: var(--secondary);
@@ -144,23 +148,6 @@ section {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 3rem;
-}
-
-.subheading {
-    font-size: var(--font-size-h3);
-    font-family: var(--font-display);
-    text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-    section {
-        padding: 8rem 1rem;
-    }
-
-    .heading:before {
-        min-height: 3rem;
-        min-width: 3rem;
-    }
 }
 
 table {

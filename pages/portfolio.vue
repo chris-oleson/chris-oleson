@@ -52,25 +52,13 @@ useHead ({ title: 'Portfolio - Chris Oleson' })
 
 <style scoped>
 .card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: start;
-    min-width: min-content;
     transition-duration: var(--fast);
-    &.tech {
-        min-width: fit-content;
-        min-height: 0;
-    }
     &:hover {
         filter: brightness(var(--hover-brightness));
     }
 }
 
 .grid {
-    max-width: 1000px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -83,10 +71,6 @@ useHead ({ title: 'Portfolio - Chris Oleson' })
     justify-content: center;
     align-items: center;
     gap: .5rem;
-}
-
-h3 {
-    margin: 0;
 }
 
 @media screen and (max-width: 600px) {

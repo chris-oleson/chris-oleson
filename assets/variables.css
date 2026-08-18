@@ -1,11 +1,11 @@
 :root {
     /* Colors */
-    --grey1: hsl(40, 0%, 95%);
+    --grey1: hsl(40, 0%, 100%);
     --grey2: hsl(40, 0%, 60%);
     --grey3: hsl(42, 0%, 5%);
     --grey4: hsla(42, 0%, 5%, 0.6);
     --grey5: hsl(42, 0%, 10%);
-    --grey6: hsl(42, 0%, 90%);
+    --grey6: hsl(42, 0%, 95%);
 
     /* Shades */
     --dark: rgba(0, 0, 0, .3);

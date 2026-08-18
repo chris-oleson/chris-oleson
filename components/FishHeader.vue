@@ -47,15 +47,15 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    padding: 1rem;
 
     & > div {
-        padding: 1rem;
         margin: auto;
         max-width: 1000px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 4rem;
+        height: 2rem;
 
         & div {
             display: flex;

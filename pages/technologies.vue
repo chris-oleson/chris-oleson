@@ -14,6 +14,7 @@ useHead ({ title: 'Technologies - Chris Oleson' })
 
 const technologies = [
     'HTML',
+    'CSS',
     'Javascript',
     'Typescript',
     'Vue',
@@ -27,30 +28,20 @@ const technologies = [
     'Python',
     'FastAPI',
     'C#',
-    'CSS',
     'Tailwind',
     'SCSS',
     'MySQL',
     'MariaDB',
     'SQLite',
-    'Git',
-    'Linux',
-    'Stripe',
-    'Plaid',
+    'Git'
 ]
 </script>
 
 <style scoped>
 .row {
-    max-width: 1000px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-}
-
-h3 {
-    margin: 0;
 }
 </style>
