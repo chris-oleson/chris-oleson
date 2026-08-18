@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h1>Technologies</h1>
+        <h1 class="heading">Technologies</h1>
         <div class="row">
             <div v-for="technology in technologies" class="tech card">
                 <h3>{{ technology }}</h3>

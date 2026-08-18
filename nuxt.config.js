@@ -16,8 +16,8 @@ export default defineNuxtConfig({
     },
 
     css: [
-        '/assets/variables.css',
-        '/assets/global.css'
+        '~/assets/variables.css',
+        '~/assets/global.css'
     ],
 
     modules: [
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
 
     fonts: {
         defaults: {
-            weights: [300, 400, 500, 900],
+            weights: [200, 400, 500, 900],
         }
     },
 

@@ -7,8 +7,6 @@ date: 2025-03-30
 
 # {{ title }}
 
----
-
 ## Should I Find Another Career?
 
 It seems like every time I have a conversation about my choice of career with someone, they inevitably ask if I'm worried about AI taking my job. I always tell them no, and give them the same reasons I gave the previous person. This led me to write down those reasons so I can simply point them to this post instead.
@@ -19,8 +17,6 @@ You could then argue, "But if software engineers are more productive with AI tha
 
 A common follow-up argument is, "But AI will get better in the future, and will eventually be able to replace you entirely, like automobiles replaced horses." This is also possible, but if software engineering is eventually replaced entirely by AI, all jobs could be replaced. The world would be a vastly different place, and nothing anyone does today would prepare anyone for it. So I'm not going to worry about this scenario for the same reasons I'm not going to worry about a global nuclear war.
 
----
-
 ## All Aboard The Hype Train
 
 LLMs are, nevertheless, an incredible new technology, and with each new technology come hype and grifters. I recently watched [this video](https://www.youtube.com/watch?v=IACHfKmZMr8){target="_blank"} from Y Combinator, and to be honest, I could barely finish without my eyes rolling right out of my head. It feels like the essence of the AI hype bubble. Of every tech hype bubble, really; pump-and-dump startups trying to con venture capitalists into bestowing just one more series of funding. This time though, the ice cream sundae comes topped with the additional promise of being able to fire 90% of your workforce.
@@ -28,8 +24,6 @@ LLMs are, nevertheless, an incredible new technology, and with each new technolo
 I try to avoid hype in all aspects of my life; I've never pre-ordered a video game, my side projects use technology that I'm most comfortable with, and I recently researched a $40 purchase for weeks before deciding to order it. I'm not a particularly experienced or old software engineer, but with the breakneck pace this industry moves, even I have lived through multiple tech hype cycles. I believe that eventually, AI progress will reach a local maxima and the hype will settle down a bit.
 
 You might argue that I'm begging the question and assuming that excitement about AI is unwarranted and is therefore hype. This is a fair complaint, but I don't actually think that the excitement is entirely unwarranted. It's an incredible technology! I use it practically every day! People should be excited about AI! But as I keep having to tell my friends and family, I don't believe my career and livelihood is threatened by it. Quite the opposite, actually.
-
----
 
 ## AI Is Good, Actually
 

@@ -1,7 +1,7 @@
 <template>
     <NuxtLayout>
         <section class="full height section">
-            <h1>{{ error.message }}</h1>
+            <h1 class="heading">{{ error.message }}</h1>
             <FishButton big border text="Return to home page" to="/"/>
         </section>
     </NuxtLayout>

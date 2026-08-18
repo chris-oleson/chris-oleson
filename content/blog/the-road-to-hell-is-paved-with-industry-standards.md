@@ -7,15 +7,11 @@ date: 2025-04-18
 
 # {{ title }}
 
----
-
 ## The Worst Reason
 
 When I take a position at a new company, I take the first week to soak up as much information about the business as possible. I don't expect to understand everything, but if I make peace with the stress of being overwhelmed with data, I can start drawing connections between data points and building a more complete picture of what I'm getting into. An important part of understanding how the data points connect is knowing the reasons for their existence. So when a coworker is explaining a part of the business to me, I ask why the tool or process is in place if it's not immediately apparent. Unfortunately, all too often, the reason is, "Oh, it's the industry standard."
 
 If you work in the industry you already know the standards: React, Jira, Agile, Scrum, AWS, etc. It is not always a bad idea to use these tools; that is not the point that I want to make here. There are already plenty of discussions about the pros and cons of each of these examples. Instead, I want to look at the idea of "Industry Standard" as a reason for adopting a tool or process in a business.
-
----
 
 ## Everyone Else Is Doing It
 
@@ -26,8 +22,6 @@ A great example of this is the software engineer interview process. Google wante
 Another example would be microservice architecture. Huge tech companies needed a way to organize their thousands of software engineers, so they split up their product(s) into hundreds of services so that each team of developers could work on a single part of the company without having to coordinate as much with all the other teams. Other, smaller companies noticed this, and decided to do the same thing with their double digit engineer headcount, without realizing they were sacrificing application performance for productivity gains that only show up at a much larger scale. If you ever found yourself single-handedly running multiple microservices, you've been a victim of this mindset.
 
 The point is that while it's not necessarily a bad idea to use something that is an Industry Standard, it is vital to understand why it works for the companies that use it, and whether your business fits into that context.
-
----
 
 ## Correlation Is Not Causation
 

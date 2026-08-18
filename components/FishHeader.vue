@@ -13,7 +13,7 @@
             <FishButton simple newTab to="https://www.linkedin.com/in/chris-oleson" title="LinkedIn"><Icon class="big" name="mdi:linkedin"/></FishButton>
             <FishButton simple newTab to="https://www.google.com/maps/place/Denver,+CO" title="Denver, Colorado"><Icon class="big" name="mdi:location"/></FishButton>
             <FishButton simple to="mailto:chris@oleson.family" title="chris@oleson.family"><Icon class="big" name="mdi:email"/></FishButton>
-            <FishButton simple newTab to="https://buy.stripe.com/aEUaGJ7iH1aO9e84gg" title="Buy me a coffee"><Icon class="big" name="mdi:coffee"/></FishButton>
+            <ThemeToggle/>
         </div>
 
         <div class="show-mobile">

@@ -3,9 +3,11 @@
     box-sizing: border-box;
     font-family: var(--font-text);
     color: var(--text-primary);
-    font-weight: var(--light-weight);
-    font-size: var(--size4);
+    font-weight: var(--normal-weight);
+    font-size: var(--font-size-default);
     margin: 0;
+    outline: none;
+    line-height: 1.2em;
 }
 
 html {
@@ -14,38 +16,31 @@ html {
 
 h1 {
     font-family: var(--font-display);
-    font-size: var(--size9);
-    line-height: var(--size9);
+    font-size: var(--font-size-h1);
+    font-weight: var(--light-weight);
     text-align: center;
-    margin-bottom: var(--size7);
 }
 
 h2 {
     font-family: var(--font-display);
-    font-size: var(--size7);
-    line-height: var(--size7);
-    text-align: center;
-    margin-bottom: var(--size5);
+    font-size: var(--font-size-h2);
+    font-weight: var(--light-weight);
 }
 
 h3 {
     font-family: var(--font-display);
-    font-size: var(--size5);
-    line-height: var(--size6);
-    margin-bottom: var(--size4);
+    font-size: var(--font-size-h3);
+    font-weight: var(--light-weight);
 }
 
-p {
-    line-height: var(--size5);
-    margin-bottom: var(--size4);
-
-    &.error {
-        color: var(--error);
-    }
-}
-
+p,
 span {
-    line-height: var(--size4);
+    line-height: 1.4em;
+
+    &.small {
+        font-size: var(--font-size-small);
+        color: var(--text-secondary);
+    }
 
     &.error {
         color: var(--error);
@@ -55,7 +50,14 @@ span {
 b,
 strong {
     font-weight: var(--bold-weight);
-    line-height: var(--size5);
+    font-size: inherit;
+    color: inherit;
+}
+
+i,
+em {
+    font-size: inherit;
+    color: inherit;
 }
 
 s {
@@ -70,7 +72,8 @@ a {
     text-decoration: none;
     cursor: pointer;
 
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
         color: var(--text-primary)
     }
 }
@@ -81,11 +84,10 @@ img {
 }
 
 ul {
-    padding-left: var(--size4);
+    padding-left: 1rem;
 
     & li {
-        line-height: var(--size5);
-        margin: var(--size2) 0;
+        margin: .5rem 0;
     }
 }
 
@@ -93,39 +95,45 @@ hr {
     width: 100%;
     border: none;
     border-bottom: 1px solid var(--text-secondary);
-    margin: var(--size8) 0;
+    margin: 3rem 0;
 }
 
 section {
-    padding: var(--size11) var(--size6);
+    padding: 8rem 2rem;
     margin: 0 auto;
 
     &.secondary {
         background: var(--secondary);
     }
+
+    & > * {
+        max-width: 878px;
+        margin: 0 auto;
+    }
 }
 
 .card {
     flex: 1;
-    padding: var(--size5);
+    padding: 1.5rem;
     border-radius: var(--border-radius);
     background: var(--secondary);
     position: relative;
-
-    & h3 {
-        text-align: center;
-    }
 }
 
 .iconify {
     display: block;
     color: currentColor;
-    min-height: var(--size5);
-    min-width: var(--size5);
+    min-height: 1.5rem;
+    min-width: 1.5rem;
 
     &.big {
-        min-height: var(--size6);
-        min-width: var(--size6);
+        min-height: 2rem;
+        min-width: 2rem;
+    }
+
+    &.small {
+        min-height: 1rem;
+        min-width: 1rem;
     }
 }
 
@@ -134,47 +142,33 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: var(--size4);
-
-}
-
-.logo {
-    height: var(--size9);
-    width: var(--size9);
+    gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .subheading {
-    font-size: var(--size5);
-    line-height: var(--size6);
+    font-size: var(--font-size-h3);
     font-family: var(--font-display);
     text-align: center;
 }
 
 @media screen and (max-width: 600px) {
-    h1 {
-        font-size: var(--size8);
-        line-height: var(--size9);
-    }
-
-    h2 {
-        font-size: var(--size6);
-        line-height: var(--size7);
-    }
-
     section {
-        padding: 7rem var(--size4);
+        padding: 8rem 1rem;
     }
 
-    .logo {
-        height: var(--size8);
-        width: var(--size8);
+    .heading:before {
+        min-height: 3rem;
+        min-width: 3rem;
     }
 }
 
 table {
     border-collapse: collapse;
-    & th, td {
-        padding: var(--size2);
+
+    & th,
+    td {
+        padding: .5rem;
         vertical-align: top;
     }
 
@@ -191,6 +185,22 @@ form {
 
 label {
     display: block;
-    line-height: var(--size4);
-    margin-bottom: var(--size2);
+    margin-bottom: .25rem;
+    text-wrap: nowrap;
+    font-size: var(--font-size-small);
+}
+
+.text>*+* {
+    margin-top: 1em;
+}
+
+.centered>* {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opacity-enter-from,
+.opacity-leave-to {
+    opacity: 0;
 }

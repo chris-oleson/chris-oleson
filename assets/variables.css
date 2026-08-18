@@ -1,11 +1,11 @@
 :root {
     /* Colors */
-    --grey1: hsl(40, 0%, 94%);
+    --grey1: hsl(40, 0%, 95%);
     --grey2: hsl(40, 0%, 60%);
     --grey3: hsl(42, 0%, 5%);
     --grey4: hsla(42, 0%, 5%, 0.6);
     --grey5: hsl(42, 0%, 10%);
-    --grey6: hsl(42, 0%, 85%);
+    --grey6: hsl(42, 0%, 90%);
 
     /* Shades */
     --dark: rgba(0, 0, 0, .3);
@@ -18,21 +18,14 @@
     /* Font weights */
     --bold-weight: 600;
     --normal-weight: 400;
-    --light-weight: 300;
+    --light-weight: 200;
 
-    /* Sizes */
-    --size1: .25rem;
-    --size2: .5rem;
-    --size3: .75rem;
-    --size4: 1rem;
-    --size5: 1.5rem;
-    --size6: 2rem;
-    --size7: 2.5rem;
-    --size8: 3rem;
-    --size9: 4rem;
-    --size10: 5rem;
-    --size11: 8rem;
-    --size12: 12rem;
+    /* Font sizes */
+    --font-size-default: 1rem;
+    --font-size-small: .75rem;
+    --font-size-h1: 4rem;
+    --font-size-h2: 2.5rem;
+    --font-size-h3: 1.5rem;
 
     /* Durations */
     --fast: .25s;
@@ -40,24 +33,21 @@
 
     /* Shadows */
     --drop-shadow: 0 2px 4px var(--extra-dark);
-    --book-shadow: -5px 5px 8px var(--extra-dark);
-    --book-hover-shadow: -10px 10px 15px var(--dark);
-    --big-book-shadow: -8px 8px 10px var(--extra-dark);
 
     /* Other */
-    --border-radius: var(--size3);
-    --overlay: var(--dark);
+    --overlay: rgba(0, 0, 0, .3);
     --error: var(--red1);
+    --border-radius: .5rem;
 }
 
 /* Light mode */
 .light {
-    --background: var(--grey1);
+    --background: var(--grey6);
     --text-primary: var(--grey3);
     --text-secondary: var(--grey4);
     --hover-brightness: .9;
     --primary: var(--red2);
-    --secondary: var(--grey6);
+    --secondary: var(--grey1);
 }
 
 /* Dark mode */

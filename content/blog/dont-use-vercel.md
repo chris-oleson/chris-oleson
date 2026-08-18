@@ -7,8 +7,6 @@ date: 2025-03-08
 
 # {{ title }}
 
----
-
 ## The Pipeline
 
 Whatever complaints you might have about React, no one can deny that it is the most widely used frontend Javascript framework. For better or worse, I'm sure it will stay that way far into the future. If companies want an easy time hiring front end developers, they will hire React devs, which incentivizes new developers looking for a job to learn React, perpetuating the cycle.
@@ -17,8 +15,6 @@ These days, however, you can't just use React; are you crazy? The [React install
 
 The one thing that does cause problems, however, is that Next is developed by Vercel, a cloud hosting company. Now, it is technically possible to deploy Next to whatever server you'd like, but Vercel markets itself to new web developers as the default way to deploy Next applications. They show off proprietary performance features like their Edge Functions™ that these developers desparately want but never actually need. So we end up with a pipeline for new developers, who will go from React to Next to Vercel, and I'd like to demonstrate that the last step in this pipeline leads to a mindset of disregard for risk in both business and engineering.
 
----
-
 ## Risk Management
 
 A big part of running a business and engineering a product is risk management. This obviously takes a different form in each discipline, but the common principle is to reduce the number of things that can go wrong, and reduce the negative impact when things do go wrong.
@@ -26,8 +22,6 @@ A big part of running a business and engineering a product is risk management. T
 In software engineering, it's generally a good idea to reduce your dependencies on third party libraries and services, as each one can be a [point of failure](https://en.wikipedia.org/wiki/Npm_left-pad_incident){target="_blank"}. In business, it's a wise decision to in-house as much of your supply chain as you can. If this isn't possible and you do need to use vendors, it's always best to ensure that alternatives are available in case a vendor starts to have [issues](https://en.wikipedia.org/wiki/2020%E2%80%932023_global_chip_shortage){target="_blank"}.
 
 Vercel fits into both of these cases as a single point of failure in both software engineering and business management. It is proprietary software. You do not own it. If Vercel increases their prices, you will just have to take it until you spend the resources to migrate to another platform. If you have any backend architecture at all, it will be built and optimized for Vercel's API. Because of this, if you do decide to move away from Vercel, you will have to rebuild your entire backend. Whether you are building software, or a business, or both, you should design its components to be modular and context-agnostic. Vercel is the opposite of this, and the fact that so many new web developers consider Vercel to be the default option is going to slowly destroy that mindset of risk management.
-
----
 
 ## A Cool Alternative
 

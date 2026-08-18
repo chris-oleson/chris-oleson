@@ -1,9 +1,9 @@
 <template>
 <section v-if="post" data-aos="fade-in" style="max-width: 1000px;">
-    <content-renderer :value="post" />
+    <content-renderer :value="post" class="text"/>
 </section>
 <section v-else class="full height section">
-    <h1>Page not found: {{ route.path.split('/').pop() }}</h1>
+    <h1 class="heading">Page not found: {{ route.path.split('/').pop() }}</h1>
     <FishButton big border to="/" text="Return to home page"/>
 </section>
 </template>
@@ -24,6 +24,6 @@ useSeoMeta({
 
 <style scoped>
 :deep(h1) {
-    margin-top: var(--size10);
+    margin-top: 5rem;
 }
 </style>

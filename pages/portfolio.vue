@@ -1,7 +1,7 @@
 <template>
     <div data-aos="fade-in">
         <section>
-            <h1>Projects</h1>
+            <h1 class="heading">Projects</h1>
             <div class="grid">
                 <NuxtLink to="https://vufi.app" target="_blank" rel="noopener" class="project card">
                     <div class="project-title">
