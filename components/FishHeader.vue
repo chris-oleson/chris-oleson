@@ -3,7 +3,6 @@
     <div>
         <div class="show-desktop">
             <FishButton simple to="/">Home</FishButton>
-            <FishButton simple to="/portfolio">Portfolio</FishButton>
             <FishButton simple to="/technologies">Technologies</FishButton>
             <FishButton simple to="/blog">Blog</FishButton>
         </div>
@@ -24,7 +23,6 @@
 
 <div v-if="showMenu" class="mobile-nav">
     <FishButton simple to="/">Home</FishButton>
-    <FishButton simple to="/portfolio">Portfolio</FishButton>
     <FishButton simple to="/technologies">Technologies</FishButton>
     <FishButton simple to="/blog">Blog</FishButton>
 </div>
