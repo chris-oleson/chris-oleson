@@ -9,22 +9,22 @@
         "postinstall": "nuxt prepare"
     },
     "dependencies": {
-        "@nuxt/content": "3.16.1",
-        "@nuxt/fonts": "0.14.0",
+        "@nuxt/content": "3.16.2",
+        "@nuxt/fonts": "1.1.0",
         "@nuxt/icon": "2.5.1",
-        "@nuxt/image": "2.1.0",
+        "@nuxt/image": "2.2.0",
         "@nuxtjs/color-mode": "4.0.1",
         "better-sqlite3": "13.0.3",
-        "nuxt": "4.5.2",
+        "nuxt": "4.6.2",
         "nuxt-aos": "1.2.6"
     },
     "devDependencies": {
         "@iconify-json/mdi": "1.2.3",
         "@nuxt/eslint": "1.17.0",
-        "eslint": "10.12.0"
+        "eslint": "10.13.0"
     },
     "engines": {
-        "node": "24.19.0",
-        "npm": "12.0.2"
+        "node": "24.22.1",
+        "npm": "11.19.1"
     }
 }
